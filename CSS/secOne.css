@@ -104,6 +104,9 @@
     margin-top: 30px;
 }
 .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     width: 210px;
     height: 140px;
@@ -111,6 +114,14 @@
     border: 2px solid #838383;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.card img{
+  width: 50%;
+  height: auto;
+}
+.card img:nth-child(1){
+  filter: drop-shadow(0 0 2px #080808);
 }
 .card:hover{
     transform: translate(-10px, -16px);
