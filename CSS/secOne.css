@@ -107,25 +107,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background: linear-gradient(#fff, #ababab) ;
     width: 210px;
     height: 140px;
     border-radius: 24px;
-    border: 2px solid #838383;
+    border: 2px solid #293f68;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .card img{
-  width: 50%;
+  width: 170%;
   height: auto;
 }
-.card img:nth-child(1){
-  filter: drop-shadow(0 0 2px #080808);
+.card .lgCarreiras{
+  transition: 0.5s;
 }
+.card .lgInovacao{
+  width: 150%;
+  transition: 0.5s;
+}
+.card .lgSocial{
+  width: 110%;
+  transition: 0.5s;
+}
+.card .lgProjetos{
+  width: 150%;
+  filter: drop-shadow(0 0 5px #000);
+  transition: 0.5s;
+}
+
 .card:hover{
     transform: translate(-10px, -16px);
     box-shadow: 5px 5px #293f68;
+    border: 2px solid #293f68
+}
+.card .lgCarreiras:hover{
+  filter: drop-shadow(0 0 5px #30bafe);
+}
+.card .lgInovacao:hover{
+  filter: drop-shadow(0 0 5px #ced92c);
+}
+.card .lgSocial:hover{
+  filter: drop-shadow(0 0 5px #52ec33);
+}
+.card .lgProjetos:hover{
+  filter: drop-shadow(0 0 5px #911dde);
 }
 @media (max-width: 866px){
     .sec-one{

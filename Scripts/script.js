@@ -4,8 +4,13 @@ const indicators = document.querySelectorAll('.carrossel-indicadores input[type=
 let index = 0;
 
 function updateCarousel() {
+  // Aplica a transformação para mover os slides e ativa o indicador
+  slides.style.transition = "transform 0.5s ease-in-out";  // Adiciona a transição suave
   slides.style.transform = `translateX(-${index * 100}%)`;
-  indicators[index].checked = true;
+  
+  // Atualiza o indicador ativo
+  indicators.forEach(indicator => indicator.checked = false); // Desmarca todos
+  indicators[index].checked = true;  // Marca o indicador do slide atual
 }
 
 document.querySelector('.btn-left').addEventListener('click', () => {
@@ -25,7 +30,25 @@ indicators.forEach((input, i) => {
   });
 });
 
-setInterval(() => {
+// Função de autoplay para mudar o slide automaticamente a cada 4 segundos
+let autoSlide = setInterval(() => {
   index = (index + 1) % totalSlides;
   updateCarousel();
-}, 4000); // tempo em milissegundos
+}, 4000); // Tempo em milissegundos (4 segundos)
+
+// Para limpar o intervalo de autoplay se o carrossel for manualmente controlado (opcional)
+document.querySelector('.btn-left').addEventListener('click', () => {
+  clearInterval(autoSlide);  // Para o autoplay ao clicar no botão
+  autoSlide = setInterval(() => {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  }, 4000);  // Reinicia o intervalo
+});
+
+document.querySelector('.btn-right').addEventListener('click', () => {
+  clearInterval(autoSlide);  // Para o autoplay ao clicar no botão
+  autoSlide = setInterval(() => {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  }, 4000);  // Reinicia o intervalo
+});
