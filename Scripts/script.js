@@ -52,3 +52,33 @@ document.querySelector('.btn-right').addEventListener('click', () => {
     updateCarousel();
   }, 4000);  // Reinicia o intervalo
 });
+
+//HEADER ANIMAÇÃO DE TRANSPARENCIA
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    header.classList.add('header-transparente');
+  } else {
+    header.classList.remove('header-transparente');
+  }
+});
+
+
+//linha do tempo
+const items = document.querySelectorAll('.item-linha');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+items.forEach(item => {
+  observer.observe(item);
+});

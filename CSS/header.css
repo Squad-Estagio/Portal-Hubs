@@ -1,7 +1,7 @@
-.close-menu{
-    display: none;
-}
-header {
+    .close-menu{
+      display: none;
+    }
+    header {
       width: 100%;
       height: 80px;
       position: fixed;
@@ -11,8 +11,12 @@ header {
       display: flex;
       align-items: center;
       z-index: 10;
+      transition: background-color 0.4s ease, box-shadow 0.4s ease;
     }
-
+    header.header-transparente {
+      background-color: #ffffffe7;
+      box-shadow: 4px 0 8px #00000033;
+    }
     .head {
       display: flex;
       position: relative;
@@ -34,7 +38,7 @@ header {
 
     .navbar li {
       list-style: none;
-      background-color: #ffffff;
+      background-color: #ffffff00;
       text-align: center;
       padding: 20px;
       border-radius: 10px;
