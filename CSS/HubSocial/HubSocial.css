@@ -31,11 +31,24 @@ ul li .HubSocialNav:hover{
 .txt p{
     font-family: "Poppins", sans-serif; 
 }
-.txt_transformam{
-    color: #fbfa32;
-    text-shadow: 0 0 5px #000;
-}
+.txt_transformam {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(270deg, #fff134, #915b18, #fff134);
+      background-size: 200% 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 3s linear infinite;
+      display: inline-block;
+    }
 
+    @keyframes gradientMove {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 .conteiner {
     display: flex;
     flex-direction: row;
