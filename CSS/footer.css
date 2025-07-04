@@ -26,7 +26,10 @@
     position: relative;
     left: 100px;
 }
-
+.footer_imgRedes ul{
+    display: flex;
+    gap: 10px;
+}
 .footer-section ul {
     list-style: none;
     padding: 0;
