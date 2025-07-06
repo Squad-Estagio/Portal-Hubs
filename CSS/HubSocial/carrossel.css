@@ -1,0 +1,154 @@
+.gallery-section {
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+    background: linear-gradient(to right ,#cdffd8, #94b9ff);
+
+}
+.section-header{
+    text-align: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+.section-header h2{
+    font-size: 2.5em;
+}
+.carrossel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carrossel {
+    position: relative;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.carrossel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carrossel-slide.active {
+    opacity: 1;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carrossel-slide:hover img {
+    transform: scale(1.05);
+}
+
+.carrossel-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.carrossel-overlay h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.carrossel-overlay p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: #333;
+}
+
+.carrossel-btn:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carrossel-prev {
+    left: 16px;
+}
+
+.carrossel-next {
+    right: 16px;
+}
+
+.carrossel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #aaaeb4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #ffd722;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background: #7c828b;
+}
+
+
+@media (max-width: 768px) {
+    
+    .carrossel {
+        height: 300px;
+    }
+    
+    .carrossel-overlay {
+        padding: 20px;
+    }
+    
+    .carrossel-overlay h3 {
+        font-size: 20px;
+    }
+    
+    .carrossel-overlay p {
+        font-size: 14px;
+    }
+}
+

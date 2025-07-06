@@ -14,45 +14,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+
+    <!--REACT-->
+    <script src="./Scripts/React/Header.js" defer></script>
+    <script src="./Scripts/React/Footer.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="head">
-            <div class="logotipo">
-                <img src="./IMG/logo eniac.png" alt="logotipo da instituição">
-            </div>
-
-            <input type="checkbox" aria-label="Close menu" role="button" id="close-menu" class="close-menu">
-            <label for="close-menu" title="close-menu" class="close-menu-label"></label>
-
-            <div class="navbar">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <div class="division-Header"></div>
-
-                    <li class="hub-container">
-                        <a href="#hubs">HUBS</a>
-                        <div class="option-Hubs">
-                            <ul>
-                                <li><a href="HubCarreiras">Hub de Carreiras</a></li>
-                                <li><a href="./HubSocial.html">Hub Social</a></li>
-                                <li><a href="HubInovacao">Hub de Inovação</a></li>
-                                <li><a href="HubProjetos.html">Hub de Projetos</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <div class="division-Header"></div>
-
-                    <li><a href="#CEGRU">CEGRU</a></li>
-                    <div class="division-Header"></div>
-
-                    <li><a href="#CONTATO">CONTATO</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <div id="header-root"></div>
     <div class="space-header"></div>
     <section id="hubCarreiras" class="sec-one">
         <div class="carrossel-Geral">
@@ -90,48 +59,11 @@
 
     </section>
 
-<footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Hub de Projetos</a></li>
-          <li><a href="#">Hub de Carreiras</a></li>
-          <li><a href="#">Hub de Inovação</a></li>
-          <li><a href="#">Hub Social</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-section">
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="#">ENIAC</a></li>
-          <li><a href="#">CEGRU</a></li>
-          <li><a href="#">Seja um parceiro</a></li>
-          <li><a href="#">Trabalhe conosco</a></li>
-          <li><a href="#">Política de privacidade</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-section footer_imgRedes">
-        <h4>Siga-nos nas nossas redes sociais</h4>
-        <ul>
-            <li><a href="#"><img src="Assets/facebook.png" alt="Ícone do facebook"></a></li>
-            <li><a href="#"><img src="Assets/linkedin.png" alt="Ícone do linkedin"></a></li>
-            <li><a href="#"><img src="Assets/instagram.png" alt="Icone do Instagram"></a></li>
-            <li><a href="#"><img src="Assets/youtube.png" alt="Ícone do youtube"></a></li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <p>© 2025 ENIAC. Todos os direitos reservados.</p>
-      <p>Desenvolvido com <span style="color: red;">❤</span> pelo Squad de Alunos ENIAC.</p>
-    </div>
-  </footer>
-  
+<!-- Footer -->
+    <div id="footer-root"></div>  
 
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="./Scripts/script.js"></script>
 </body>
 

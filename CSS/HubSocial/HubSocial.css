@@ -4,14 +4,135 @@ ul li .HubSocialNav{
 ul li .HubSocialNav:hover{
     background: #d4d4d4;
 }
+/*FLOCOS DE NEVE*/
+.snow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
 
-.Social_sc{
-    width: 100%;
-    height: 75vh;
-    background: linear-gradient(to right,#fff, #e1f8ea ) ;
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: #000000;
+  text-shadow: 0 0 3px #ffffffee;
+  font-size: 10px;
+  opacity: 0.8;
+  animation-name: fall;
+  animation-timing-function: linear;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(30px);
+  }
 }
 
 
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+}
+
+.btn-outline:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/*FINAL*/
+
+.gradient-text {
+    background: linear-gradient(135deg, #3b82f6, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.Social_sc {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+  background: linear-gradient(135deg, #aedaf7 0%, #ffffff 50%, #c4fdd4 100%);
+  padding: 20px;
+  overflow: hidden;
+}
+.centerMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerMain img {
+  width: 20%;
+  max-width: 400px;
+}
+
+.Social_sc h1{
+  text-align: center;
+  font-size: 2.7em;
+    font-weight: 900;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    font-family: "Poppins", sans-serif;
+}
+.Social_sc p{
+  font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #6b7280;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
 .sectionMainSocial{
     width: 100%;
     height: auto;
@@ -170,13 +291,14 @@ ul li .HubSocialNav:hover{
   text-align: center;
   width: 200px;
   position: relative;
-  opacity: 1;
+  opacity: 0;
   transition: all 0.6s ease;
+  transform: translateX(-50px);
 }
 
 .item-linha.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .icone {
@@ -259,14 +381,16 @@ ul li .HubSocialNav:hover{
   border-radius: 5px;
 }
 
+
 .imgPessoas {
   width: 70px;
   height: 70px;
-  background-color: #9d9d9d82;
   border-radius: 5px;
   flex-shrink: 0;
 }
-
+.imgPessoas img{
+  width: 100%;
+}
 .txtImpacto {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -284,23 +408,27 @@ ul li .HubSocialNav:hover{
 
 /*Carrossel eniac*/
 .Carrossel_Social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   max-width: 1000px;
-  height: 500px;
+  height: 480px;
   margin: 0 auto;
   margin-top: 20px;
-  background-color: #ffffff;
+  background-color: #383838;
   border-radius: 20px;
   overflow: hidden;
 }
 .Carrossel_Social img{
-  width: 100%;
+  width: 80%;
 }
 .btn_Left,.btn_Right{
   position: absolute;
   top: 50%;
   font-size: 2em;
-  background-color: #cccccc93;
+  background-color: #00000093;
+  color: #fff;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -341,29 +469,49 @@ ul li .HubSocialNav:hover{
   position: relative;
   z-index: 2;
 }
+.img_Social_carrossel:not(.maisImgs):hover img {
+  filter: brightness(60%);
+  transition: filter 0.3s ease;
+}
 
-.img_Social_carrossel::before {
-  content: '';
+.maisImgs{
+  position: relative;
+}
+.maisImgs img{
+  filter: brightness(30%);
+  transition: filter 0.3s ease;
+}
+.img_Social_carrossel p {
   position: absolute;
-  top: 0;
-  left: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 3em;
+  z-index: 4;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+  pointer-events: none;
+}
+
+/*CONTATO*/
+.contato{
   width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to right ,#cdffd8, #94b9ff);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+
 }
-
-.img_Social_carrossel:hover::before {
-  opacity: 1;
+.contato h2{
+  font-size: 35px;
 }
-
-
+.contato p{
+  color: #3a3a3a;
+}
 @media (max-width: 1100px) {
     .conteiner {
         flex-direction: column; 
         align-items: center;
+    
     }
 
     .img_social,
@@ -371,4 +519,36 @@ ul li .HubSocialNav:hover{
         width: 90%;
         max-width: 540px;
     }
+}
+
+@media (min-width: 1921px) {
+  .centerMain{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+  }
+  .Social_sc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+  }
+
+  .Social_sc img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .Social_sc .txtMain {
+    max-width: 600px;
+    margin-top: 0;
+  }
+  .txtMain h1{
+    font-size: 4em;
+  }
+  .txtMain p{
+    font-size: 1.1em;
+  }
 }

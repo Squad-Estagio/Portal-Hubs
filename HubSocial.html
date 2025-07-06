@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/HubSocial/HubSocial.css" />
     <link rel="icon" href="./IMG/Logo_HubSocial.png" />
+    <link rel="stylesheet" href="./CSS/HubSocial/carrossel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,69 +21,43 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!--REACT-->
+    <script src="./Scripts/React/Header.js" defer></script>
+    <script src="./Scripts/React/Footer.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <div class="head">
-        <div class="logotipo">
-          <a href="index.html"
-            ><img src="./IMG/logo eniac.png" alt="logotipo da instituição"
-          /></a>
-        </div>
-
-        <input
-          type="checkbox"
-          aria-label="Close menu"
-          role="button"
-          id="close-menu"
-          class="close-menu"
-        />
-        <label
-          for="close-menu"
-          title="close-menu"
-          class="close-menu-label"
-        ></label>
-
-        <div class="navbar">
-          <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <div class="division-Header"></div>
-
-            <li class="hub-container">
-              <a href="#hubs">HUBS</a>
-              <div class="option-Hubs">
-                <ul>
-                  <li><a href="HubCarreiras">Hub de Carreiras</a></li>
-                  <li class="HubSocialNav">
-                    <a href="HubSocial.html">Hub Social</a>
-                  </li>
-                  <li><a href="HubInovacao">Hub de Inovação</a></li>
-                  <li><a href="HubProjetos.html">Hub de Projetos</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <div class="division-Header"></div>
-
-            <li><a href="#CEGRU">CEGRU</a></li>
-            <div class="division-Header"></div>
-
-            <li><a href="#CONTATO">CONTATO</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <div id="header-root"></div>
     <div class="space-header"></div>
 
-    <section class="Social_sc"></section>
+    <section class="Social_sc" id="socialSection">
+      <div class="centerMain">
+        <div class="snow-container"></div>
+  
+        <img src="./IMG/Hub_Social/HubSocialAnim.gif" alt="" class="fade-on-visible">
+  
+        <div class="txtMain">
+          <h1>TRANSFORMANDO <span class="gradient-text">VIDAS</span></h1>
+          <p>Trabalhamos incansavelmente para criar um impacto positivo na sociedade através de ações sociais que transformam comunidades inteiras.</p>
+    
+          <div class="hero-buttons">
+            <button class="btn btn-primary">Seja um Voluntário</button>
+            <button class="btn btn-outline">Conheça Nossos Projetos</button>
+          </div>
+        </div>
+
+      </div>
+</section>
+
 
     <section class="sectionMainSocial">
+      <!--
       <h1>
         Educação, cuidado e comunidade que
         <span class="txt_transformam">transformam.</span>
       </h1>
-
+      -->
       <div></div>
       <div class="conteiner">
         <div class="img_social"></div>
@@ -122,39 +97,47 @@
             </div>
           </div>
           <div class="item-linha">
-            <div class="icone">🎉</div>
+            <div class="icone">
+              <img src="./IMG/mascarasteatrais.png" alt="">
+            </div>
             <div class="linha"></div>
             <div class="conteudo">
               <h3>2021</h3>
-              <p><span>Consectetur adipiscing elit</span></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><span>Cultura na Quebrada</span></p>
+              <p>Promoveu eventos culturais e oficinas artísticas em comunidades, valorizando talentos locais e fortalecendo o vínculo social.</p>
             </div>
           </div>
           <div class="item-linha">
-            <div class="icone">🤖</div>
+            <div class="icone">
+                <img src="./IMG/Hub_Social/celular.png" alt="">
+            </div>
             <div class="linha"></div>
             <div class="conteudo">
               <h3>2023</h3>
-              <p><span>Sed elit pharetra</span></p>
-              <p>Quisque quis lacus laoreet, aliquam orci ac, tempor purus.</p>
+              <p><span>Inclusão Digital Jovem</span></p>
+              <p>Distribuiu kits de tecnologia e ofereceu cursos gratuitos de informática para jovens em situação de vulnerabilidade social.</p>
             </div>
           </div>
           <div class="item-linha">
-            <div class="icone">💡</div>
+            <div class="icone">
+              <img src="./IMG/pilha-de-tres-livros.png" alt="">
+            </div>
             <div class="linha"></div>
             <div class="conteudo">
               <h3>2024</h3>
-              <p><span>Nullam egestas ultrices</span></p>
-              <p>Suspendisse egestas dui posuere interdum accumsan.</p>
+              <p><span>Educação que Transforma</span></p>
+              <p>Implementou reforço escolar e mentoria em escolas públicas, impactando diretamente o desempenho de alunos no ENEM.</p>
             </div>
           </div>
           <div class="item-linha">
-            <div class="icone">👨‍🏫</div>
+            <div class="icone">
+              <img src="./IMG/ferramentas.png" alt="">
+            </div>
             <div class="linha"></div>
             <div class="conteudo">
               <h3>2025</h3>
-              <p><span>Consectetur adipiscing elit</span></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><span>Formação para o Futuro</span></p>
+              <p>Criou programas de capacitação técnica e encaminhamento ao mercado de trabalho para jovens das periferias</p>
             </div>
           </div>
         </div>
@@ -166,107 +149,141 @@
 
       <div class="impactos">
         <div class="pessoas">
-          <div class="imgPessoas"></div>
+          <div class="imgPessoas">
+            <img src="./IMG/Hub_Social/logoPessoas.png" alt="">
+          </div>
           <div class="txtImpacto">
             <h3>3526</h3>
             <p>Pessoas impactadas</p>
           </div>
         </div>
         <div class="alunos">
-          <div class="imgPessoas"></div>
+          <div class="imgPessoas">
+            <img src="./IMG/Hub_Social/chapeuFormatura.png" alt="">
+          </div>
           <div class="txtImpacto">
             <h3>1890</h3>
             <p>Alunos com bolsa</p>
           </div>
         </div>
         <div class="cestas">
-          <div class="imgPessoas"></div>
+          <div class="imgPessoas">
+            <img src="./IMG/Hub_Social/cesta-de-comida.png" alt="">
+          </div>
           <div class="txtImpacto">
             <h3>3500</h3>
             <p>Cestas básicas distribuidas</p>
           </div>
         </div>
       </div>
-
-      <div class="Carrossel_Social">
-        <img src="./IMG/Hub_Social/IMG1_Social.jpeg" alt="" />
-        <div class="btn_Left">❮</div>
-        <div class="btn_Right">❯</div>
-      </div>
-      <div class="imgs_secundarias">
-        <div class="img_Social_carrossel">
-          <img src="./IMG/Hub_Social/IMG2_Social.jpeg" alt="" />
-        </div>
-        <div class="img_Social_carrossel">
-          <img src="./IMG/Hub_Social/IMG3_Social.jpeg" alt="" />
-        </div>
-        <div class="img_Social_carrossel">
-          <img src="./IMG/Hub_Social/IMG4_Social.jpeg" alt="" />
-        </div>
-      </div>
     </section>
 
-    <section class="secAcoes"></section>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Hub de Projetos</a></li>
-            <li><a href="#">Hub de Carreiras</a></li>
-            <li><a href="#">Hub de Inovação</a></li>
-            <li><a href="#">Hub Social</a></li>
-          </ul>
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nossas Ações em Fotos</h2>
+            <p>Veja de perto o impacto das nossas ações sociais e como estamos transformando vidas em nossa comunidade.</p>
         </div>
-
-        <div class="footer-section">
-          <h4>Institucional</h4>
-          <ul>
-            <li><a href="#">ENIAC</a></li>
-            <li><a href="#">CEGRU</a></li>
-            <li><a href="#">Seja um parceiro</a></li>
-            <li><a href="#">Trabalhe conosco</a></li>
-            <li><a href="#">Política de privacidade</a></li>
-          </ul>
+        
+        <div class="carrossel-container">
+            <div class="carrossel">
+                <div class="carrossel-slide active">
+                    <img src="./IMG/Hub_Social/IMG1_Social.jpeg" alt="feliz natal">
+                    <div class="carrossel-overlay">
+                        <h3>Natal Solidário</h3>
+                        <p>Com a ajuda de tantas mãos generosas, conseguimos espalhar alegria e esperança para centenas de crianças.</p>
+                    </div>
+                </div>
+                
+                <div class="carrossel-slide">
+                    <img src="./IMG/Hub_Social/IMG2_Social.jpeg" alt="Espaço de Convivência">
+                    <div class="carrossel-overlay">
+                        <h3>Provas para Bolsas</h3>
+                        <p>Foi um dia de prova cheio de emoção e oportunidades para garantir uma das 150 bolsas de estudo nos cursos de pedagogia, enfermagem e psicologia.</p>
+                    </div>
+                </div>
+                
+                <div class="carrossel-slide">
+                    <img src="./IMG/Hub_Social/IMG3_Social.jpeg" alt="Centro Comunitário">
+                    <div class="carrossel-overlay">
+                        <h3>Natal Solidário</h3>
+                        <p></p>
+                    </div>
+                </div>
+                
+                <div class="carrossel-slide">
+                    <img src="./IMG/Hub_Social/IMG4_Social.jpeg" alt="Projeto Rural">
+                    <div class="carrossel-overlay">
+                        <h3>Projeto Rural</h3>
+                        <p>Apoio ao desenvolvimento sustentável no campo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carrossel-btn carrossel-prev">
+                <p class="fas fa-chevron-left">❮</p>
+            </button>
+            <button class="carrossel-btn carrossel-next">
+                <p class="fas fa-chevron-right">❯</p>
+            </button>
+            
+            <div class="carrossel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="footer-section">
-          <h4>Siga-nos nas nossas redes sociais</h4>
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="Assets/facebook.png" alt="Ícone do facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="Assets/linkedin.png" alt="Ícone do linkedin"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="Assets/instagram.png" alt="Icone do Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="Assets/youtube.png" alt="Ícone do youtube"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="footer-bottom">
-        <p>© 2025 ENIAC. Todos os direitos reservados.</p>
-        <p>
-          Desenvolvido com <span style="color: red">❤</span> pelo Squad de
-          Alunos ENIAC.
-        </p>
-      </div>
-    </footer>
-    <script src="./Scripts/script.js"></script>
+
+    <section class="contato">
+      <h2>Entre em Contato</h2>
+      <p>Tem alguma dúvida ou quer participar de nossos projetos? Entre em contato conosco!</p>
+    </section>
+
+    <div id="footer-root"></div>  
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="./Scripts/script2.js"></script>
+
+    <script>
+  const snowContainer = document.querySelector('.snow-container');
+
+  function createSnowflake() {
+    const snowflake = document.createElement('span');
+    snowflake.classList.add('snowflake');
+    snowflake.textContent = '.';
+
+    // Posição horizontal aleatória
+    snowflake.style.left = Math.random() * 100 + 'vw';
+
+    // Tamanho aleatório
+    const size = Math.random() * 10 + 10;
+    snowflake.style.fontSize = size + 'px';
+
+    // Duração aleatória
+    const duration = Math.random() * 10 + 10;
+    snowflake.style.animationDuration = duration + 's';
+
+    // Opacidade leve aleatória
+    snowflake.style.opacity = Math.random() * 0.5 + 0.3;
+
+    snowContainer.appendChild(snowflake);
+
+    // Remove depois que cair
+    setTimeout(() => {
+      snowflake.remove();
+    }, duration * 1000);
+  }
+
+  // Cria flocos continuamente
+  setInterval(createSnowflake, 300);
+</script>
+
   </body>
 </html>

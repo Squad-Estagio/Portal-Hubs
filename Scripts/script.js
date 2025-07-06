@@ -65,20 +65,3 @@ window.addEventListener('scroll', () => {
 });
 
 
-//linha do tempo
-const items = document.querySelectorAll('.item-linha');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.5
-});
-
-items.forEach(item => {
-  observer.observe(item);
-});
