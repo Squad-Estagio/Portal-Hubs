@@ -1,98 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hub Projetos</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <link rel="stylesheet" href="./CSS/HubProjetos/HubMain.css">
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/HubProjetos/HubMain.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
     <header>
-        <div class="head">
-            <div class="logotipo">
-                <a href="index.html"><img src="./IMG/logo eniac.png" alt="logotipo da instituição"/> </a>
-            </div>
-
-            <input type="checkbox" aria-label="Close menu" role="button" id="close-menu" class="close-menu">
-            <label for="close-menu" title="close-menu" class="close-menu-label"></label>
-            <div class="navbar">
-                <ul>
-                    <li class="HubProjetos"><a href="#hubCarreiras">Hub Carreiras</a></li>
-
-                    <div class="division-Header"></div>
-
-                    <li><a href="#hub Projetos">Hub Projetos</a></li>
-
-                    <div class="division-Header"></div>
-
-                    <li><a href="#Hub Inovação">Hub Inovação</a></li>
-
-                    <div class="division-Header"></div>
-
-                    <li><a href="HubSocial.html">Hub Social</a></li>
-                </ul>
-            </div>
+      <div class="head">
+        <div class="logotipo">
+          <a href="index.html"
+            ><img src="./IMG/logo eniac.png" alt="logotipo da instituição" />
+          </a>
         </div>
+
+        <input
+          type="checkbox"
+          aria-label="Close menu"
+          role="button"
+          id="close-menu"
+          class="close-menu"
+        />
+        <label
+          for="close-menu"
+          title="close-menu"
+          class="close-menu-label"
+        ></label>
+        <div class="navbar">
+          <ul>
+            <li class="HubProjetos">
+              <a href="#hubCarreiras">Hub Carreiras</a>
+            </li>
+
+            <div class="division-Header"></div>
+
+            <li><a href="#hub Projetos">Hub Projetos</a></li>
+
+            <div class="division-Header"></div>
+
+            <li><a href="#Hub Inovação">Hub Inovação</a></li>
+
+            <div class="division-Header"></div>
+
+            <li><a href="HubSocial.html">Hub Social</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <div class="space-header"></div>
     <div class="sectionOne">
-        <div class="cardHubPrincipal">
-            <div class="cardText">
-                
-            </div>
-        </div>
-    </div>
-
-    <section class="sectionTwo">
-
-    </section>
-
-    <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Hub de Projetos</a></li>
-          <li><a href="#">Hub de Carreiras</a></li>
-          <li><a href="#">Hub de Inovação</a></li>
-          <li><a href="#">Hub Social</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-section">
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="#">ENIAC</a></li>
-          <li><a href="#">CEGRU</a></li>
-          <li><a href="#">Seja um parceiro</a></li>
-          <li><a href="#">Trabalhe conosco</a></li>
-          <li><a href="#">Política de privacidade</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-section">
-        <h4>Siga-nos nas nossas redes sociais</h4>
-        <ul>
-            <li><a href="#"><img src="Assets/facebook.png" alt="Ícone do facebook"></a></li>
-            <li><a href="#"><img src="Assets/linkedin.png" alt="Ícone do linkedin"></a></li>
-            <li><a href="#"><img src="Assets/instagram.png" alt="Icone do Instagram"></a></li>
-            <li><a href="#"><img src="Assets/youtube.png" alt="Ícone do youtube"></a></li>
-        </ul>
+      <div class="cardHubPrincipal">
+        <div class="cardText"></div>
       </div>
     </div>
-  
-    <div class="footer-bottom">
-      <p>© 2025 ENIAC. Todos os direitos reservados.</p>
-      <p>Desenvolvido com <span style="color: red;">❤</span> pelo Squad de Alunos ENIAC.</p>
-    </div>
-  </footer>
 
-</body>
+    <section class="sectionTwo"></section>
+
+    <div id="footer-root"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin> </script>
+    <script src="./Scripts/React/Footer.js"></script>
+    <script src="./Scripts/script.js"></script>
+  </body>
 </html>

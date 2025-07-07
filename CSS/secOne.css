@@ -1,7 +1,7 @@
 .sec-one{
     width: 100%;
     height: auto;
-    background-color: #cccccc;
+    background: linear-gradient(to right ,#97c9ed, #6885b8, #373749) ;
     padding: 25px;
 }
 .carrossel-Geral {
@@ -17,7 +17,7 @@
   
   .carrossel-slides {
     display: flex;
-    width: 300%;
+    width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
   }
@@ -33,9 +33,10 @@
     align-items: center;
     user-select: none;
   }
-  
   .item1{
-    background-color: red;
+    background: url(../IMG/ENIAC.png);
+    background-size: 100%;
+    background-position: center center;
   }
   .item2{
     background-color: rgb(121, 238, 121);

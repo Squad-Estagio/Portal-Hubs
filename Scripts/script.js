@@ -30,6 +30,7 @@ indicators.forEach((input, i) => {
   });
 });
 
+
 // Função de autoplay para mudar o slide automaticamente a cada 4 segundos
 let autoSlide = setInterval(() => {
   index = (index + 1) % totalSlides;
