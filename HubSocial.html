@@ -15,12 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
-    />
+      />
 
     <!--REACT-->
     <script src="./Scripts/React/Header.js" defer></script>
@@ -37,11 +40,11 @@
   
         <img src="./IMG/Hub_Social/HubSocialAnim.gif" alt="" class="fade-on-visible">
   
-        <div class="txtMain">
+        <div class="txtMain hidden2">
           <h1>TRANSFORMANDO <span class="gradient-text">VIDAS</span></h1>
-          <p>Trabalhamos incansavelmente para criar um impacto positivo na sociedade através de ações sociais que transformam comunidades inteiras.</p>
+          <p class="hidden3">Trabalhamos incansavelmente para criar um impacto positivo na sociedade através de ações sociais que transformam comunidades inteiras.</p>
     
-          <div class="hero-buttons">
+          <div class="hero-buttons hidden">
             <button class="btn btn-primary">Seja um Voluntário</button>
             <button class="btn btn-outline">Conheça Nossos Projetos</button>
           </div>
@@ -62,15 +65,15 @@
       <div class="conteiner">
         <div class="img_social"></div>
         <div class="txt">
-          <h3>Missão</h3>
-          <p class="txt_Missao_Social">
+          <h3 class="hidden">Missão</h3>
+          <p class="txt_Missao_Social hidden">
             Oferecer programas de extensão universitária e ações integradas de
             educação, saúde, assistência social e meio ambiente, ampliando
             oportunidades para jovens e adultos das comunidades periféricas.
           </p>
 
-          <h3>Visão</h3>
-          <p>
+          <h3 class="hidden">Visão</h3>
+          <p class="hidden">
             Ser referência nacional em desenvolvimento comunitário, gerando
             impacto social sustentável e promovendo cidadania ativa.
           </p>
@@ -80,6 +83,9 @@
 
     <section class="secAcoes">
       <div class="secao-linha-do-tempo">
+        <div class="conteudo-Linha">
+
+        </div>
         <h2>Ações realizadas</h2>
         <div class="linha-do-tempo">
           <div class="item-linha">
@@ -142,13 +148,14 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <section class="resultados_social">
       <h2>Resultados e impactos</h2>
 
       <div class="impactos">
-        <div class="pessoas">
+        <div class="pessoas hidden4">
           <div class="imgPessoas">
             <img src="./IMG/Hub_Social/logoPessoas.png" alt="">
           </div>
@@ -157,7 +164,7 @@
             <p>Pessoas impactadas</p>
           </div>
         </div>
-        <div class="alunos">
+        <div class="alunos hidden4">
           <div class="imgPessoas">
             <img src="./IMG/Hub_Social/chapeuFormatura.png" alt="">
           </div>
@@ -166,7 +173,7 @@
             <p>Alunos com bolsa</p>
           </div>
         </div>
-        <div class="cestas">
+        <div class="cestas hidden4">
           <div class="imgPessoas">
             <img src="./IMG/Hub_Social/cesta-de-comida.png" alt="">
           </div>
@@ -239,9 +246,55 @@
 
 
 
-    <section class="contato">
-      <h2>Entre em Contato</h2>
-      <p>Tem alguma dúvida ou quer participar de nossos projetos? Entre em contato conosco!</p>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Tem alguma dúvida ou quer participar de nossos projetos? Entre em contato conosco!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="voluntario">Quero ser voluntário</option>
+                                <option value="doacao">Fazer uma doação</option>
+                                <option value="parceria">Proposta de parceria</option>
+                                <option value="informacoes">Solicitar informações</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div id="contact-root"></div>
+            </div>
+        </div>
     </section>
 
     <div id="footer-root"></div>  
@@ -250,40 +303,10 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 
     <script src="./Scripts/script2.js"></script>
+    <script src="./Scripts/React/InfoContato.js"></script>
 
     <script>
-  const snowContainer = document.querySelector('.snow-container');
-
-  function createSnowflake() {
-    const snowflake = document.createElement('span');
-    snowflake.classList.add('snowflake');
-    snowflake.textContent = '.';
-
-    // Posição horizontal aleatória
-    snowflake.style.left = Math.random() * 100 + 'vw';
-
-    // Tamanho aleatório
-    const size = Math.random() * 10 + 10;
-    snowflake.style.fontSize = size + 'px';
-
-    // Duração aleatória
-    const duration = Math.random() * 10 + 10;
-    snowflake.style.animationDuration = duration + 's';
-
-    // Opacidade leve aleatória
-    snowflake.style.opacity = Math.random() * 0.5 + 0.3;
-
-    snowContainer.appendChild(snowflake);
-
-    // Remove depois que cair
-    setTimeout(() => {
-      snowflake.remove();
-    }, duration * 1000);
-  }
-
-  // Cria flocos continuamente
-  setInterval(createSnowflake, 300);
-</script>
+    </script>
 
   </body>
 </html>

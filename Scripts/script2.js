@@ -94,8 +94,9 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
       entry.target.style.transitionDelay = `${index * 0.2}s`;
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target);
+      entry.target.classList.add('show');  // animação entra
+    } else {
+      entry.target.classList.remove('show');  // animação some quando sai da área visível
     }
   });
 }, {
@@ -125,3 +126,61 @@ items.forEach((item, index) => {
 
     elements.forEach(el => observer.observe(el));
   });
+
+  //Animação do scroll do mouse - direita
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach ( (entry) =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        }
+        else{
+            entry.target.classList.remove('show')
+        }
+    })
+})
+let cards = document.querySelectorAll('.hidden')
+cards.forEach((element) => myObserver.observe(element) )
+
+//Animação do scroll do mouse - esquerda
+const myObserver2 = new IntersectionObserver((ent) => {
+    ent.forEach ( (en) =>{
+        if(en.isIntersecting){
+            en.target.classList.add('show2')
+        }
+        else{
+            en.target.classList.remove('show2')
+        }
+    })
+})
+let cards2 = document.querySelectorAll('.hidden2')
+cards2.forEach((element) => myObserver2.observe(element) )
+
+//Animação do scroll do mouse - opacidade
+const myObserver3 = new IntersectionObserver((entt) => {
+    entt.forEach ( (enn) =>{
+        if(enn.isIntersecting){
+            enn.target.classList.add('show3')
+        }
+        else{
+            enn.target.classList.remove('show3')
+        }
+    })
+})
+let cards3 = document.querySelectorAll('.hidden3')
+cards3.forEach((element) => myObserver3.observe(element) )
+
+
+//Animação mouse - baixo 
+const myObserver4 = new IntersectionObserver((enter) => {
+    enter.forEach ( (ente) =>{
+        if(ente.isIntersecting){
+            ente.target.classList.add('show4')
+        }
+        else{
+            ente.target.classList.remove('show4')
+        }
+    })
+})
+let cards4 = document.querySelectorAll('.hidden4')
+cards4.forEach((element) => myObserver4.observe(element) )
+

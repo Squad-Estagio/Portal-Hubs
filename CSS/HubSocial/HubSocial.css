@@ -79,7 +79,7 @@ ul li .HubSocialNav:hover{
     background: linear-gradient(135deg, #3b82f6, #10b981);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: text;    
 }
 
 .Social_sc {
@@ -89,10 +89,13 @@ ul li .HubSocialNav:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 86vh;
-  background: linear-gradient(135deg, #aedaf7 0%, #ffffff 50%, #c4fdd4 100%);
+  height: 85vh;
+  background: url(./Capa.png);
+  background-position: center center;
+  background-size: cover;
   padding: 20px;
   overflow: hidden;
+  border-bottom: solid 5px #fff;
 }
 .centerMain{
   display: flex;
@@ -136,7 +139,7 @@ ul li .HubSocialNav:hover{
 .sectionMainSocial{
     width: 100%;
     height: auto;
-    background: linear-gradient(to right ,#cdffd8, #94b9ff);
+    background: var(--BackGeralHubSocial);
     padding: 20px;
 }
 .sectionMainSocial h1{
@@ -245,6 +248,7 @@ ul li .HubSocialNav:hover{
 }
 
 .linha_Tempo{
+  position: relative;
     width: 90%;
     border-radius: 30px;
     min-height: 500px;
@@ -263,10 +267,40 @@ ul li .HubSocialNav:hover{
 
 
 .secao-linha-do-tempo{
+  position: relative;
   background-color: #ffffff7e;
   padding: 20px;
   border-radius: 30px;
+  overflow: hidden;
 }
+.secao-linha-do-tempo::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  top: -530px;
+  left: 50%;
+ height: 1700px;
+  background: linear-gradient(#10b981 40%, #3b82f6);
+  animation: animete 6s linear infinite;
+}
+.secao-linha-do-tempo::after{
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 27px;
+  background-color: #f7f7f7;
+}
+.secao-linha-do-tempo .conteudo-Linha,
+.secao-linha-do-tempo h2,
+.secao-linha-do-tempo .linha-do-tempo {
+  position: relative;
+  z-index: 3;
+}
+ @keyframes animete {
+    100%{
+        transform: rotate(360deg);
+    }
+  }
 .secao-linha-do-tempo h2 {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -419,6 +453,12 @@ ul li .HubSocialNav:hover{
   background-color: #383838;
   border-radius: 20px;
   overflow: hidden;
+}
+.gallery-section .container .section-header h2{
+  font-family: "Sansation", sans-serif;
+  font-weight: 1000;
+  font-size: 3em;
+  color: #020202;
 }
 .Carrossel_Social img{
   width: 80%;

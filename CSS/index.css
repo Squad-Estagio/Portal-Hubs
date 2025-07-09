@@ -1,7 +1,9 @@
 @import './global.css';
+@import './Colors/cores.css';
 @import './header.css';
 @import './secOne.css';
 @import './secTwo.css';
 @import './footer.css';
 @import './Animacoes/Animacoes.css';
-@import './HubInovacao/style.css'
+@import './HubInovacao/style.css';
+@import './HubSocial/Formulario.css';
