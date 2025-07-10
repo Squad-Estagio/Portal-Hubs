@@ -3,4 +3,7 @@
   --HubSocialMain: linear-gradient(135deg, #aedaf7 0%, #ffffff 50%, #c4fdd4 100%);
   --BackGeralHubSocial : linear-gradient(to right ,#cdffd8, #94b9ff);
 
+  --HubInovacaoMain: linear-gradient(135deg, #fff6e2 0%, #ffd230 100%);
+  --BackGeralHubIno : linear-gradient(to left ,#fff6e2 0%, #efe87c 50%, #ffd230 100%);
 }
+
