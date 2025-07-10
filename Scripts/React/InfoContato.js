@@ -44,9 +44,7 @@ function ContactSection() {
           { className: 'texto-cartao' },
           '(11) 2472-5500',
           React.createElement('br'),
-          '(11) 94132-1584',
-          React.createElement('br'),
-          React.createElement('small', null, '(Ligação gratuita)')
+          '(11) 94132-1584'
         )
       )
     ),

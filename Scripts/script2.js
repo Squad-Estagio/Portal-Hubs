@@ -184,3 +184,38 @@ const myObserver4 = new IntersectionObserver((enter) => {
 let cards4 = document.querySelectorAll('.hidden4')
 cards4.forEach((element) => myObserver4.observe(element) )
 
+
+// Função para animar contagem
+  function animateCount(el, target) {
+    let current = 0;
+    const duration = 2000; // duração total da animação em ms
+    const increment = target / (duration / 16); // aproximação com base em 60fps
+
+    function update() {
+      current += increment;
+      if (current < target) {
+        el.textContent = Math.floor(current);
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = target;
+      }
+    }
+
+    update();
+  }
+    // Intersection Observer para detectar quando o elemento entra na tela
+  const observer4 = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const target = +counter.getAttribute('data-target');
+        animateCount(counter, target);
+        obs.unobserve(counter); // para não contar de novo
+      }
+    });
+  }, { threshold: 0.6 }); // 60% visível na tela
+
+  // Aplica o observer em todos os elementos com classe "counter"
+  document.querySelectorAll('.counter').forEach(counter => {
+    observer4.observe(counter);
+  });

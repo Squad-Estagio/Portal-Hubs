@@ -4,38 +4,6 @@ ul li .HubSocialNav{
 ul li .HubSocialNav:hover{
     background: #d4d4d4;
 }
-/*FLOCOS DE NEVE*/
-.snow-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.snowflake {
-  position: absolute;
-  top: -10px;
-  color: #000000;
-  text-shadow: 0 0 3px #ffffffee;
-  font-size: 10px;
-  opacity: 0.8;
-  animation-name: fall;
-  animation-timing-function: linear;
-}
-
-@keyframes fall {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    transform: translateY(100vh) translateX(30px);
-  }
-}
-
 
 .btn {
     display: inline-flex;
@@ -541,7 +509,7 @@ ul li .HubSocialNav:hover{
   text-align: center;
 
 }
-.contato h2{
+.contato  h2{
   font-size: 35px;
 }
 .contato p{
