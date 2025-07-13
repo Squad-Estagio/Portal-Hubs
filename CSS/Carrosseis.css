@@ -3,6 +3,7 @@
     height: auto;
     padding: 80px 0;
     background: linear-gradient(to right ,#cdffd8, #94b9ff);
+
 }
 .section-header{
     text-align: center;
@@ -123,7 +124,7 @@
 }
 
 .dot.active {
-    background: #ffd722;
+    background: #00e91f;
     transform: scale(1.2);
 }
 
@@ -150,4 +151,3 @@
         font-size: 14px;
     }
 }
-

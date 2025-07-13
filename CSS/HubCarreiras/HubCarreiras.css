@@ -1,0 +1,161 @@
+ul li .HubCarreirasNav{
+   background: #ffffff;
+}
+ul li .HubCarreirasNav:hover{
+    background: #d4d4d4;
+}
+
+ul li .HubSocialNav{
+    background: #ffffff;
+}
+ul li .HubSocialNav:hover{
+    background: #d4d4d4;
+}
+
+ul li .HubInovNav{
+    background: #ffffff;
+}
+ul li .HubInovNav:hover{
+    background: #d4d4d4;
+}
+
+
+ul li .HubProjetosNav{
+  background: #d4d4d4;
+}
+ul li .HubProjetosNav:hover{
+  background: #d4d4d4;
+}
+
+
+.btn-outline {
+    background: #ffffff28;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background: #1859a38a;
+    color: white;
+}
+
+/*FINAL*/
+
+.gradient-text {
+    background: linear-gradient(135deg, #02a1e6, #052e3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;    
+}
+
+.Carreiras_sc {
+  background: url(../CapaCarreiras.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.imgCarreiras img {
+    width: 20%;
+    margin-bottom: 40px;
+}
+.Carreiras_sc h1{
+    color: #fff;
+}
+.Carreiras_sc p{
+    color: #ffffff;
+}
+
+.sectionMainCarreiras{
+    background: var(--BackGeralHubCarreiras);
+}
+
+.img_Carreiras::before {
+    border: 3px solid #1b89d3;
+}
+.img_Carreiras::after {
+    border: 1px dashed #ffffff00;
+}
+
+
+.txt h3{
+  color: #fff;
+  text-shadow: 2px 2px #14331b;
+}
+/*AÇÕES REALIZADAS*/
+.secAcoes{
+    background: var(--BackGeralHubCarreiras);
+    color: #fff;
+}
+
+.linha_Tempo{
+    background-color: #ffffff80;
+}
+
+.secao-linha-do-tempo{
+  background-color: #7cdaf7;
+}
+.secao-linha-do-tempo::before{
+  background: linear-gradient(to top ,#0b304a, #01b6f3);
+}
+.secao-linha-do-tempo::after{
+  background:linear-gradient(to right ,#051c2c, #3d80a7);
+}
+
+
+.linha {
+  background: #fff;
+}
+
+.conteudo h3 {
+  background-color: #fff;
+  color: #000;
+}
+
+.conteudo p span {
+  color: #fff;
+}
+
+.conteudo p {
+  color: #fff;
+}
+
+.resultados_Carreiras{
+    background: var(--BackGeralHubCarreiras);
+}
+.resultados_Carreiras h2{
+  color: #fff;
+}
+.txtImpacto h3, .txtImpacto p{
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.impactos::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.gallery-section{
+    background: var(--BackGeralHubCarreiras) !important;
+}
+
+/*Carrossel eniac*/
+.gallery-section .container .section-header h2{
+  color: #fff;
+}
+.dot.active {
+    background: #0469ff;
+}
+/*CONTATO*/
+.section-header h2, .section-header p{
+  color: #fff;
+}
+.contact-section{
+    background: var(--BackGeralHubCarreiras);
+}
+.contato{
+  background: var(--BackGeralHubCarreiras);
+}
+
+.contato p{
+  color: #3a3a3a;
+}

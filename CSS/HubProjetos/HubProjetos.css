@@ -1,0 +1,168 @@
+ul li .HubCarreirasNav{
+   background: #ffffff;
+}
+ul li .HubCarreirasNav:hover{
+    background: #d4d4d4;
+}
+
+ul li .HubSocialNav{
+    background: #ffffff;
+}
+ul li .HubSocialNav:hover{
+    background: #d4d4d4;
+}
+
+ul li .HubInovNav{
+    background: #ffffff;
+}
+ul li .HubInovNav:hover{
+    background: #d4d4d4;
+}
+
+
+ul li .HubProjetosNav{
+  background: #d4d4d4;
+}
+ul li .HubProjetosNav:hover{
+  background: #d4d4d4;
+}
+
+
+.btn-primary {
+    background: linear-gradient(135deg, #28462e, #8fdba2);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1a2e1e, #95f5ad);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #95f5ad;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background: linear-gradient(135deg, #1a2e1e, #95f5ad);
+    color: white;
+}
+
+/*FINAL*/
+
+.gradient-text {
+    background: linear-gradient(135deg, #4de673, #06b400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;    
+}
+
+.Projetos_sc {
+  background: url(../CapaProjetos.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.centerMain .LogoAnmHubProjetos{
+    width: 30%;
+}
+.Projetos_sc h1{
+    color: #fff;
+}
+.Projetos_sc p{
+    color: #ffffff;
+}
+
+.sectionMainProjetos{
+    background: var(--BackGeralHubProjetos);
+}
+
+.img_Projetos::before {
+    border: 3px solid #97d89b;
+}
+.img_Projetos::after {
+    border: 1px dashed #ffffff00;
+}
+
+
+.txt h3{
+  color: #fff;
+  text-shadow: 2px 2px #14331b;
+}
+/*AÇÕES REALIZADAS*/
+.secAcoes{
+    background: linear-gradient(to right ,#26442d, #87d69b);
+    color: #fff;
+}
+
+.linha_Tempo{
+    background-color: #ffffff80;
+}
+
+.secao-linha-do-tempo{
+  background-color: #9bd5a9;
+}
+.secao-linha-do-tempo::before{
+  background: linear-gradient(#26442d 40%, #87d69b);
+}
+.secao-linha-do-tempo::after{
+  background-color:#4d7a58;
+}
+
+
+.linha {
+  background: #fff;
+}
+
+.conteudo h3 {
+  background-color: #fff;
+  color: #000;
+}
+
+.conteudo p span {
+  color: #fff;
+}
+
+.conteudo p {
+  color: #fff;
+}
+
+.resultados_Projetos{
+    background: var(--BackGeralHubProjetos);
+}
+.resultados_Projetos h2{
+  color: #fff;
+}
+.txtImpacto h3, .txtImpacto p{
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+
+.impactos::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.gallery-section{
+    background: linear-gradient(to right ,#26442d, #87d69b) !important;
+}
+
+/*Carrossel eniac*/
+.gallery-section .container .section-header h2{
+  color: #fff;
+}
+/*CONTATO*/
+.section-header h2, .section-header p{
+  color: #fff;
+}
+.contact-section{
+    background: var(--BackGeralHubProjetos);
+}
+.contato{
+  background: var(--BackGeralHubProjetos);
+}
+
+.contato p{
+  color: #3a3a3a;
+}

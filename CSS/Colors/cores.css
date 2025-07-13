@@ -3,7 +3,17 @@
   --HubSocialMain: linear-gradient(135deg, #aedaf7 0%, #ffffff 50%, #c4fdd4 100%);
   --BackGeralHubSocial : linear-gradient(to right ,#cdffd8, #94b9ff);
 
+      /*HUB INOVAÇÃO*/
   --HubInovacaoMain: linear-gradient(135deg, #fff6e2 0%, #ffd230 100%);
   --BackGeralHubIno : linear-gradient(to left ,#fff6e2 0%, #efe87c 50%, #ffd230 100%);
+
+  /*HUB PROJETOS*/
+  --HubProjetosMain: linear-gradient(135deg,#26442d 0%, #ffffff 50%, #87d69b 100%);
+  --BackGeralHubProjetos : linear-gradient(to right ,#26442d, #87d69b);
+
+  
+  /*HUB CARREIRAS*/
+  --HubCarreirasMain: linear-gradient(135deg,#537084 0%, #4ccbf7 50%, #4ccbf7 100%);
+  --BackGeralHubCarreiras : linear-gradient(to right ,#0b304a, #01b6f3);
 }
 

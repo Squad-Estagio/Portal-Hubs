@@ -103,14 +103,14 @@ const headerData = {
     {
       label: "HUBS",
       submenu: [
-        { label: "Hub de Carreiras", href: "HubCarreiras" },
+        { label: "Hub de Carreiras", href: "HubCarreiras.html", className: "HubCarreirasNav" },
         { label: "Hub Social", href: "HubSocial.html", className: "HubSocialNav" },
-        { label: "Hub de Inovação", href: "HubInovacao" },
-        { label: "Hub de Projetos", href: "HubProjetos.html" },
+        { label: "Hub de Inovação", href: "HubInovacao.html", className: "HubInovNav" },
+        { label: "Hub de Projetos", href: "HubProjetos.html", className: "HubProjetosNav" },
       ],
     },
+    { label: "SOBRE", href: "#SOBRE" },
     { label: "CEGRU", href: "#CEGRU" },
-    { label: "CONTATO", href: "#CONTATO" },
   ],
 };
 
