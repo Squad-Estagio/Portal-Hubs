@@ -15,5 +15,11 @@
   /*HUB CARREIRAS*/
   --HubCarreirasMain: linear-gradient(135deg,#537084 0%, #4ccbf7 50%, #4ccbf7 100%);
   --BackGeralHubCarreiras : linear-gradient(to right ,#0b304a, #01b6f3);
+
+  /*HOMEPAGE*/
+  --BackGeralHome: linear-gradient(90deg,#002c4c, #6f7fd7, #002c4c);
+
+  /*CEGRU*/
+  --BackGeralCEGRU: linear-gradient(to right,#295bb0,#addff4);
 }
 

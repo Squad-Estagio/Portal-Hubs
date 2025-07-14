@@ -1,0 +1,139 @@
+ul li .HubCegruNav{
+   background: #ffffff;
+}
+ul li .HubCarreirasNav:hover{
+    background: #d4d4d4;
+}
+
+ul li .HubSocialNav{
+    background: #ffffff;
+}
+ul li .HubSocialNav:hover{
+    background: #d4d4d4;
+}
+
+ul li .HubInovNav{
+    background: #ffffff;
+}
+ul li .HubInovNav:hover{
+    background: #d4d4d4;
+}
+
+
+ul li .HubProjetosNav{
+  background: #d4d4d4;
+}
+ul li .HubProjetosNav:hover{
+  background: #d4d4d4;
+}
+
+.btn-outline {
+    background: #ffffff28;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.btn-outline:hover {
+    background: #1859a38a;
+    color: #000;
+}
+
+/*FINAL*/
+
+.gradient-text {
+    background: linear-gradient(135deg, #02a1e6, #052e3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;    
+}
+
+.CEGRU_sc {
+  background: url();
+  background-position: center center;
+  background-size: cover;
+}
+
+.imgCEGRU img {
+    width: 20%;
+    margin-bottom: 40px;
+}
+.CEGRU_sc h1{
+    color: #000;
+}
+.CEGRU_sc p{
+    color: #000;
+}
+
+.sectionMainCEGRU{
+    background: var(--BackGeralCEGRU);
+}
+
+.img_CEGRU::before {
+    border: 3px solid #1b89d3;
+}
+.img_CEGRU::after {
+    border: 1px dashed #ffffff00;
+}
+
+.txt h3{
+  color: #fff;
+  text-shadow: 2px 2px #14331b;
+}
+
+.linha {
+  background: #000;
+}
+
+.conteudo h3 {
+  background-color: #000;
+  color: #000;
+}
+
+.conteudo p span {
+  color: #000;
+}
+
+.conteudo p {
+  color: #000;
+}
+
+.resultados_CEGRU{
+    background: var(--BackGeralCEGRU);
+}
+.resultados_CEGRU h2{
+  color: #000;
+}
+.txtImpacto h3, .txtImpacto p{
+  color: #000;
+  text-shadow: 0 0 5px #ccc;
+}
+
+.impactos::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.gallery-section{
+    background: var(--BackGeralCEGRU) !important;
+}
+
+/*Carrossel eniac*/
+.gallery-section .container .section-header h2{
+  color: #000;
+}
+.dot.active {
+    background: #0469ff;
+}
+/*CONTATO*/
+.section-header h2, .section-header p{
+  color: #000;
+}
+.contact-section{
+    background: var(--BackGeralCEGRU);
+}
+.contato{
+  background: var(--BackGeralCEGRU);
+}
+
+.contato p{
+  color: #3a3a3a;
+}

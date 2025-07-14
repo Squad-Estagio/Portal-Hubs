@@ -1,8 +1,8 @@
 .sec-one{
     width: 100%;
     height: auto;
-    background: linear-gradient(to right ,#97c9ed, #6885b8, #373749) ;
     padding: 25px;
+    background: var(--BackGeralHome);
 }
 .carrossel-Geral {
     position: relative;
