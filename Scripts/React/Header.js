@@ -109,8 +109,8 @@ const headerData = {
         { label: "Hub de Projetos", href: "HubProjetos.html", className: "HubProjetosNav" },
       ],
     },
-    { label: "SOBRE", href: "#SOBRE" },
-    { label: "CEGRU", href: "#CEGRU" },
+    { label: "SOBRE", href: "sobre.html" },
+    { label: "CEGRU", href: "CEGRU.html" },
   ],
 };
 
