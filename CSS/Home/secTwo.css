@@ -1,11 +1,12 @@
-.secTwo{
+.secTwo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: var(--BackGeralHome);
 }
-.hubCarreiras{
+
+.hubCarreiras {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,24 +15,28 @@
     width: 95%;
     height: 70vh;
 }
-.imgHubCarreiras{
+
+.imgHubCarreiras {
     width: 320px;
     height: 70vh;
-    background-color: rgb(90, 108, 170);
     border-radius: 20px;
 }
-.txtHubCarreiras{
+
+.txtHubCarreiras {
     width: 440px;
 }
-.txtHubCarreiras h2{
+
+.txtHubCarreiras h2 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 45px;
 }
-.txtHubCarreiras span{
+
+.txtHubCarreiras span {
     color: #f5e400;
     text-shadow: 0 0 10px #00000094;
 }
-.txtHubCarreiras span:nth-child(2){
+
+.txtHubCarreiras span:nth-child(2) {
     color: rgb(84, 56, 206);
 }

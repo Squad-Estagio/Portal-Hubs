@@ -1,22 +1,22 @@
 ul li .HubCegruNav{
-   background: #ffffff;
+  background: #ffffff;
 }
 ul li .HubCarreirasNav:hover{
-    background: #d4d4d4;
+  background: #d4d4d4;
 }
 
 ul li .HubSocialNav{
-    background: #ffffff;
+  background: #ffffff;
 }
 ul li .HubSocialNav:hover{
-    background: #d4d4d4;
+  background: #d4d4d4;
 }
 
 ul li .HubInovNav{
-    background: #ffffff;
+  background: #ffffff;
 }
 ul li .HubInovNav:hover{
-    background: #d4d4d4;
+  background: #d4d4d4;
 }
 
 
@@ -28,23 +28,23 @@ ul li .HubProjetosNav:hover{
 }
 
 .btn-outline {
-    background: #ffffff28;
-    border: 2px solid #000;
-    color: #000;
+  background: #ffffff28;
+  border: 2px solid #000;
+  color: #000;
 }
 
 .btn-outline:hover {
-    background: #1859a38a;
-    color: #000;
+  background: #1859a38a;
+  color: #000;
 }
 
 /*FINAL*/
 
 .gradient-text {
-    background: linear-gradient(135deg, #02a1e6, #052e3f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;    
+  background: linear-gradient(135deg, #02a1e6, #052e3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;    
 }
 
 .CEGRU_sc {
@@ -54,25 +54,25 @@ ul li .HubProjetosNav:hover{
 }
 
 .imgCEGRU img {
-    width: 20%;
-    margin-bottom: 40px;
+  width: 20%;
+  margin-bottom: 40px;
 }
 .CEGRU_sc h1{
-    color: #000;
+  color: #000;
 }
 .CEGRU_sc p{
-    color: #000;
+  color: #000;
 }
 
 .sectionMainCEGRU{
-    background: var(--BackGeralCEGRU);
+  background: var(--BackGeralCEGRU);
 }
 
 .img_CEGRU::before {
-    border: 3px solid #1b89d3;
+  border: 3px solid #1b89d3;
 }
 .img_CEGRU::after {
-    border: 1px dashed #ffffff00;
+  border: 1px dashed #ffffff00;
 }
 
 .txt h3{
@@ -98,7 +98,8 @@ ul li .HubProjetosNav:hover{
 }
 
 .resultados_CEGRU{
-    background: var(--BackGeralCEGRU);
+  background: var(--BackGeralCEGRU);
+  padding-top: 5%;
 }
 .resultados_CEGRU h2{
   color: #000;
@@ -113,7 +114,7 @@ ul li .HubProjetosNav:hover{
 }
 
 .gallery-section{
-    background: var(--BackGeralCEGRU) !important;
+  background: var(--BackGeralCEGRU) !important;
 }
 
 /*Carrossel eniac*/
@@ -121,14 +122,14 @@ ul li .HubProjetosNav:hover{
   color: #000;
 }
 .dot.active {
-    background: #0469ff;
+  background: #0469ff;
 }
 /*CONTATO*/
 .section-header h2, .section-header p{
   color: #000;
 }
 .contact-section{
-    background: var(--BackGeralCEGRU);
+  background: var(--BackGeralCEGRU);
 }
 .contato{
   background: var(--BackGeralCEGRU);

@@ -1,28 +1,34 @@
-ul li .HubCarreirasNav{
-   background: #ffffff;
-}
-ul li .HubCarreirasNav:hover{
-    background: #d4d4d4;
-}
-ul li .HubSocialNav{
+ul li .HubCarreirasNav {
     background: #ffffff;
 }
-ul li .HubSocialNav:hover{
+
+ul li .HubCarreirasNav:hover {
     background: #d4d4d4;
 }
-ul li .HubProjetosNav{
+
+ul li .HubSocialNav {
     background: #ffffff;
 }
-ul li .HubProjetosNav:hover{
+
+ul li .HubSocialNav:hover {
+    background: #d4d4d4;
+}
+
+ul li .HubProjetosNav {
+    background: #ffffff;
+}
+
+ul li .HubProjetosNav:hover {
     background: #d4d4d4;
 }
 
 
 
-ul li .HubInovNav{
+ul li .HubInovNav {
     background: #d4d4d4;
 }
-ul li .HubInovNav:hover{
+
+ul li .HubInovNav:hover {
     background: #d4d4d4;
 }
 
@@ -52,34 +58,36 @@ ul li .HubInovNav:hover{
 /*FINAL*/
 
 .gradient-text {
-    background: linear-gradient(135deg, #db9601, #815901,#4e3500);
+    background: linear-gradient(135deg, #db9601, #815901, #4e3500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;    
+    background-clip: text;
 }
 
 .Social_sc {
-  background: url(../CapaInovacao.png);
+    background: url(../CapaInovacao.png);
     background-position: center center;
-  background-size: cover;
+    background-size: cover;
 }
 
 .centerMain .LogoAnmHubInvocacao {
-  width: 30%;
-  filter: drop-shadow(0 0 10px #000000);
-}
-.Social_sc h1{
-  font-weight: 700;
-}
-.Social_sc p{
-  color: #414141;
+    width: 30%;
+    filter: drop-shadow(0 0 10px #000000);
 }
 
-.sectionMainSocial{
-  background: var(--BackGeralHubIno);
+.Social_sc h1 {
+    font-weight: 700;
 }
 
-.txt{
+.Social_sc p {
+    color: #414141;
+}
+
+.sectionMainSocial {
+    background: var(--BackGeralHubIno);
+}
+
+.txt {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
 }
@@ -88,52 +96,59 @@ ul li .HubInovNav:hover{
 .img_social {
     background-color: #fff;
 }
+
 .img_social::before {
     border: 3px solid #c9bb00;
 }
+
 .img_social::after {
     border: 1px dashed #ffffff00;
 }
 
-.txt h3{
+.txt h3 {
     text-shadow: 2px 2px #a0a0a0;
 }
 
 
 /*AÇÕES REALIZADAS*/
-.secAcoes{
+.secAcoes {
     background: var(--BackGeralHubIno);
 }
 
-.linha_Tempo{
+.linha_Tempo {
     background-color: #ffffff80;
 }
 
-.secao-linha-do-tempo{
-  background-color: #8577007e;
-}
-.secao-linha-do-tempo::before{
-    background: linear-gradient(135deg, #db9601,#382702);
-}
-.secao-linha-do-tempo::after{
-  background-color: #f3f29d;
+.secao-linha-do-tempo {
+    background-color: #8577007e;
 }
 
-.resultados_social{
+.secao-linha-do-tempo::before {
+    background: linear-gradient(135deg, #db9601, #382702);
+}
+
+.secao-linha-do-tempo::after {
+    background-color: #f3f29d;
+}
+
+.resultados_social {
     background: var(--BackGeralHubIno);
 }
 
-.gallery-section-inovacao{
+.gallery-section-inovacao {
     background: var(--BackGeralHubIno) !important;
 }
+
 .dot.active {
     background: #ffa807;
     transform: scale(1.2);
 }
+
 /*CONTATO*/
-.contact-section-inovacao{
+.contact-section-inovacao {
     background: var(--BackGeralHubIno);
 }
-.contato{
-  background: linear-gradient(to right ,#cdffd8, #94b9ff);
+
+.contato {
+    background: linear-gradient(to right, #cdffd8, #94b9ff);
 }

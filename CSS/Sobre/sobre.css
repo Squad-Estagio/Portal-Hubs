@@ -1,70 +1,75 @@
-ul li .HubCegruNav{
-   background: #ffffff;
-}
-ul li .HubCarreirasNav:hover{
-    background: #d4d4d4;
+ul li .HubCegruNav {
+  background: #ffffff;
 }
 
-ul li .HubSocialNav{
-    background: #ffffff;
-}
-ul li .HubSocialNav:hover{
-    background: #d4d4d4;
-}
-
-ul li .HubInovNav{
-    background: #ffffff;
-}
-ul li .HubInovNav:hover{
-    background: #d4d4d4;
-}
-
-
-ul li .HubProjetosNav{
+ul li .HubCarreirasNav:hover {
   background: #d4d4d4;
 }
-ul li .HubProjetosNav:hover{
+
+ul li .HubSocialNav {
+  background: #ffffff;
+}
+
+ul li .HubSocialNav:hover {
+  background: #d4d4d4;
+}
+
+ul li .HubInovNav {
+  background: #ffffff;
+}
+
+ul li .HubInovNav:hover {
+  background: #d4d4d4;
+}
+
+
+ul li .HubProjetosNav {
+  background: #d4d4d4;
+}
+
+ul li .HubProjetosNav:hover {
   background: #d4d4d4;
 }
 
 
 .btn-outline {
-    background: #ffffff;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
 
 .btn-outline:hover {
-    background: #8c18a38a;
-    color: #000000;
+  background: #8c18a38a;
+  color: #000000;
 }
 
 
 
 .gradient-text {
-    background: var(--BackGeralSobre);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;    
+  background: var(--BackGeralSobre);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 
 
 
-.CEGRU_sc h1{
-    color: #000;
-}
-.CEGRU_sc p{
-    color: #000;
+.CEGRU_sc h1 {
+  color: #000;
 }
 
-.sectionMainCEGRU{
-    background: var(--BackGeralSobre);
+.CEGRU_sc p {
+  color: #000;
+}
+
+.sectionMainCEGRU {
+  background: var(--BackGeralSobre);
 }
 
 
 
-.txt h3{
+.txt h3 {
   color: #fff;
   text-shadow: 2px 2px #14331b;
 }
@@ -87,22 +92,23 @@ ul li .HubProjetosNav:hover{
 }
 
 
-.section-header h2, .section-header p{
+.section-header h2,
+.section-header p {
   color: #000;
 }
-.contact-section{
-    background: var(--BackGeralSobre);
-}
-.contato{
+
+.contact-section {
   background: var(--BackGeralSobre);
 }
 
-.contato p{
+.contato {
+  background: var(--BackGeralSobre);
+}
+
+.contato p {
   color: #7c1980;
 }
+
 .btn {
-    background: var(--BackGeralSobre);
+  background: var(--BackGeralSobre);
 }
-
-
-

@@ -1,9 +1,11 @@
-ul li .HubSocialNav{
+ul li .HubSocialNav {
     background: #d4d4d4;
 }
-ul li .HubSocialNav:hover{
+
+ul li .HubSocialNav:hover {
     background: #d4d4d4;
 }
+
 .dot.active {
     background: #0a2efc;
     transform: scale(1.2);

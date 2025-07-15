@@ -1,34 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
-html{
-      overflow-x: hidden;
+
+html {
+    overflow-x: hidden;
 }
 
 /*TRANSITION*/
-.hidden{
+.hidden {
     opacity: 0;
     filter: blur(15px);
     transition: all 0.5s;
     transform: translateX(100%);
 }
-.show{
+
+.show {
     opacity: 1;
     filter: blur(0px);
     transition: opacity 3s ease, transform 1s ease;
     transform: translateX(0%);
 }
-.hidden2{
+
+.hidden2 {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-10%);
 }
-.show2{
+
+.show2 {
     opacity: 1;
     filter: blur(0px);
     transition: opacity 1s ease, transform 0.8s ease;
@@ -36,13 +41,14 @@ html{
 }
 
 /*TRANSITION-smoff*/
-.hidden3{
+.hidden3 {
     opacity: 0;
     filter: blur(5px);
     transition: all 1s;
     transform: translateX(0%);
 }
-.show3{
+
+.show3 {
     opacity: 1;
     filter: blur(0px);
     transition: all 0.5s;
@@ -63,10 +69,14 @@ html{
     0% {
         transform: translateY(50px);
     }
+
     60% {
-        transform: translateY(-10px); /* Sobe um pouco */
+        transform: translateY(-10px);
+        /* Sobe um pouco */
     }
+
     100% {
-        transform: translateY(0); /* Volta levemente */
+        transform: translateY(0);
+        /* Volta levemente */
     }
 }
