@@ -127,10 +127,12 @@
 .card .lgInovacao{
   width: 150%;
   transition: 0.5s;
+  filter: drop-shadow(0 0 5px #4e3a0a);
 }
 .card .lgSocial{
   width: 100%;
   transition: 0.5s;
+  filter: drop-shadow(0 0 5px #1692c0);
 }
 .card .lgProjetos{
   width: 150%;
@@ -140,20 +142,22 @@
 
 .card:hover{
     transform: translate(-10px, -16px);
-    box-shadow: 5px 5px #293f68;
+    box-shadow: 5px 5px #dbc731;
     border: 2px solid #293f68
 }
-.card .lgCarreiras:hover{
-  filter: drop-shadow(0 0 5px #30bafe);
+
+
+.cardCarreiras{
+  background: var(--BackGeralHubCarreiras);
 }
-.card .lgInovacao:hover{
-  filter: drop-shadow(0 0 5px #ced92c);
+.cardInovacao{
+  background: var(--BackGeralHubIno);
 }
-.card .lgSocial:hover{
-  filter: drop-shadow(0 0 5px #52ec33);
+.cardSocial{
+  background: var(--BackGeralHubSocial);
 }
-.card .lgProjetos:hover{
-  filter: drop-shadow(0 0 5px #911dde);
+.cardProjetos{
+  background: var(--BackGeralHubProjetos);
 }
 @media (max-width: 866px){
     .sec-one{

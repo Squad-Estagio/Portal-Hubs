@@ -1,5 +1,6 @@
 .tickets{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -8,18 +9,34 @@
     padding: 20px;
     background: var(--BackGeralHome);
 }
+.tickets h2{
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    top: 0;
+    font-size: 45px;
+    color: #ffffff10;
+}
+.tickets span{
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+}
 .ticketCarreiras, .ticketInovacao, .ticketProjetos, .ticketSocial {
     display: flex;
     color: #fff;
-    width: 70%;    
-    min-height: 400px;
+    width: 65%;    
+    min-height: 300px;
     background-color: rgba(255, 255, 255, 0.667) ;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 25px;
     overflow: hidden;
 }
 .TicketImg {
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
@@ -42,7 +59,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     gap: 30px;
 }
 
@@ -59,10 +76,10 @@
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     border: 3px solid #fff;
+    cursor: pointer;
 }
-.TicketImg{
-    max-width: 160px;
-    height: auto;
+.btnSaibaMais:hover{
+    background: #2c2c2c52;
 }
 .resulIcons{
     display: flex;
@@ -73,7 +90,7 @@
     padding: 5px;
     gap: 15px;
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 .resulNumber{
     font-weight: 600;
@@ -82,15 +99,39 @@
     width: 18%;
     height: auto;
 }
-.ticketCarreiras{
-    
-}
+
+/*TICKET INOVAÇÃO*/
 .ticketInovacao{
-    
+    background: var(--HubInovacaoMain);
+    color: #000;
 }
+.TicketInovacaoResul{
+    background-color: #b0a422;
+}
+.MainTicketInovacao button{
+    border: 3px solid #000;
+    color: #000;
+}
+
+
+/*TICKET PROJETOS*/
 .ticketProjetos{
-    
+    background: var(--BackGeralHubProjetos);
 }
+.TicketProjetosResul{
+    background: #043402;
+}
+
+/*TICKET SOCIAL*/
 .ticketSocial{
-    
+    background: var(--BackGeralHubSocial);
+    color: #000;
+}
+.TicketSocialResul{
+    background: #647ad4;
+}
+
+.MainTicketSocial button{
+    border: 3px solid #000;
+    color: #000;
 }
