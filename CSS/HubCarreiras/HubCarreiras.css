@@ -142,6 +142,10 @@ ul li .HubProjetosNav:hover {
   text-shadow: 0 0 5px #000;
 }
 
+.txt p{
+  text-shadow: 1px 1px #a0a0a0;
+}
+
 .impactos::-webkit-scrollbar-thumb {
   background-color: #ccc;
 }

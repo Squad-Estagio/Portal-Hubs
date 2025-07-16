@@ -123,19 +123,21 @@
 }
 .card .lgCarreiras{
   transition: 0.5s;
+  filter: drop-shadow(0 0 5px #000);
+  width: 55%;
 }
 .card .lgInovacao{
-  width: 150%;
+  width: 70%;
   transition: 0.5s;
   filter: drop-shadow(0 0 5px #4e3a0a);
 }
 .card .lgSocial{
-  width: 100%;
+  width: 60%;
   transition: 0.5s;
   filter: drop-shadow(0 0 5px #1692c0);
 }
 .card .lgProjetos{
-  width: 150%;
+  width: 70%;
   filter: drop-shadow(0 0 5px #000);
   transition: 0.5s;
 }

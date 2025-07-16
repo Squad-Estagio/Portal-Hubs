@@ -74,6 +74,12 @@ ul li .HubProjetosNav:hover {
   text-shadow: 2px 2px #14331b;
 }
 
+.txt p{
+  color: #fff;
+  text-shadow: 2px 2px #14331b;
+  margin-bottom: 15px;
+}
+
 .linha {
   background: #000;
 }
@@ -111,4 +117,7 @@ ul li .HubProjetosNav:hover {
 
 .btn {
   background: var(--BackGeralSobre);
+}
+.sobre-container h2, .sobre-container p {
+  color: #fff;
 }

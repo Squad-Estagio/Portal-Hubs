@@ -36,7 +36,19 @@
     overflow: hidden;
 }
 .TicketImg {
-    width: 30%;
+    width: 40%;
+    height: auto;
+}
+.TicketImgProjetos {
+    width: 40%;
+    height: auto;
+}
+.TicketImgSocial {
+    width: 20%;
+    height: auto;
+}
+.TicketImgCarreiras {
+    width: 33%;
     height: auto;
 }
 
