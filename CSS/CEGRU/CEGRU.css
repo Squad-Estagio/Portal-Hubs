@@ -57,6 +57,11 @@ ul li .HubProjetosNav:hover{
   width: 20%;
   margin-bottom: 40px;
 }
+.LogoCEGRU{
+  width: 28% !important;
+  height: auto;
+  margin-bottom: 3%;
+}
 .CEGRU_sc h1{
   color: #000;
 }

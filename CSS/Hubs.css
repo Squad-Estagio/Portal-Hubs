@@ -145,7 +145,8 @@
 
 .img_social,
 .img_Projetos,
-.img_Carreiras {
+.img_Carreiras,
+.img_CEGRU {
   position: relative;
   width: 540px;
   height: 460px;
@@ -157,7 +158,8 @@
 
 .img_social::before,
 .img_Projetos::before,
-.img_Carreiras::before {
+.img_Carreiras::before,
+.img_CEGRU::before {
   content: "";
   position: absolute;
   top: 10px;
