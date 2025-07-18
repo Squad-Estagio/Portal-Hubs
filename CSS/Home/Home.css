@@ -29,7 +29,7 @@
     display: flex;
     color: #fff;
     width: 65%;    
-    min-height: 300px;
+    min-height: 370px;
     background-color: rgba(255, 255, 255, 0.667) ;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -59,26 +59,42 @@
     align-items: center;
     flex-direction: column;
     background-color: #0f739e;
+    position: relative;
+    gap: 10px;
+}
+.divisionTickets{
+    width: 90%;
+    height: 0.01em;
+    background-color: #fff;
 }
 
+.divisionTicketsBlack{
+    background-color: #000;
+ 
+}
 .MainTicketCarreiras{
     background: var(--BackGeralHubCarreiras);
 }
 
 .MainTicket {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 20px;
-    gap: 30px;
+    gap: 10px;
 }
-
+.MainTicket h4{
+    margin-top: 30px;
+    font-size: 2.3em;
+    font-family: "Poppins", sans-serif;
+}
 .MainTicket p{
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 23px;
+    padding: 10px;
 }
 .btnSaibaMais{
     padding: 15px 40px;
@@ -102,10 +118,12 @@
     padding: 5px;
     gap: 15px;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    z-index: 2;
 }
 .resulNumber{
     font-weight: 600;
+    font-size: 1.3em;
 }
 .resulIcons img{
     width: 18%;
@@ -131,7 +149,7 @@
     background: var(--BackGeralHubProjetos);
 }
 .TicketProjetosResul{
-    background: #043402;
+    background: #10501f;
 }
 
 /*TICKET SOCIAL*/
@@ -142,8 +160,65 @@
 .TicketSocialResul{
     background: #647ad4;
 }
-
+.MainTicketISocial img{
+    width: 15%;
+}
 .MainTicketSocial button{
     border: 3px solid #000;
     color: #000;
 }
+.CircleTickets{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    right: -35px;
+}
+.TicketCarreirasResul .CircleTickets{
+    background-color: #0f739e;
+    z-index: 1;
+}
+.ticketInovacao .CircleTickets{
+    background-color: #b0a422;
+}
+.TicketProjetosResul .CircleTickets{
+    background-color: #10501f;
+}
+.TicketSocialResul .CircleTickets{
+    background-color: #647ad4;
+}
+
+
+@media (max-width: 1160px) {
+    .ticketCarreiras, .ticketInovacao, .ticketProjetos, .ticketSocial{
+        width: 100%;
+    }
+    .ticketSocial, .ticketCarreiras, .ticketInovacao, .ticketProjetos {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .TicketSocialResul, .TicketCarreirasResul, .TicketInovacaoResul, .TicketProjetosResul ,.MainTicketISocial,  .MainTicketCarreiras, .MainTicketInovacao{
+      width: 100%;
+    }
+  
+    .MainTicketISocial img {
+      width: 30%; /* Ajuste o tamanho da logo conforme necessário */
+    }
+  
+    .resulIcons {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .resulIcons img {
+      width: 10%; /* Ícones maiores para mobile */
+    }
+  
+    .wrapper {
+      position: static;
+      transform: none;
+      margin-top: 10px;
+    }
+  }
+  
