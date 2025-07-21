@@ -203,6 +203,11 @@
   text-shadow: 2px 2px #8189cf;
 }
 
+.txt_Missao_Carreiras,.txt_Visao_Carreiras {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
 .txt p {
   text-align: justify;
   min-width: 300px;
