@@ -235,6 +235,23 @@
             </div>
         </div>
     </div>
+    <div class="TextMidia">
+        <h2>Galeria de Imagens</h2>
+        <span>Galeria de Imagens</span>
+      </div>
+      
+      <div id="imagens-root"></div>
+      <div class="ModalImagens" style="display: none;">
+        <button class="close-btn" onclick="fecharModal()">×</button>
+  
+        <img src="" alt="Imagem Grande">
+      
+        <div class="ModalTxt">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+
 </section>
 
 
@@ -297,8 +314,15 @@
 
     <script src="./Scripts/script2.js"></script>
     <script src="./Scripts/React/InfoContato.js"></script>
+    <script src="./Scripts/React/Imagens.js"></script>
 
     <script>
+      function fecharModal() {
+        const modal = document.querySelector('.ModalImagens');
+        modal.style.display = 'none';
+
+        document.html.classList.add('no-scroll');
+      }
     </script>
 
   </body>

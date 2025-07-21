@@ -21,12 +21,15 @@ ul li .HubInovNav:hover{
 
 
 ul li .HubProjetosNav{
-  background: #d4d4d4;
+  background: #ffffff;
 }
 ul li .HubProjetosNav:hover{
-  background: #d4d4d4;
+  background: #ffffff;
 }
 
+.navbar li:nth-child(7){
+  background-color: #d4d4d4;
+}
 .btn-outline {
   background: #ffffff28;
   border: 2px solid #08a8d88a;
@@ -148,97 +151,4 @@ ul li .HubProjetosNav:hover{
 
 .contato p{
   color: #3a3a3a;
-}
-
-
-
-.TextMidia{
-  text-align: center;
-  margin-top: 40px;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.TextMidia h2{
-  position: absolute;
-  color: #ffffff23;
-  font-size: 2.8em;
-}
-.TextMidia span{
-  font-size: 1.4em;
-  letter-spacing: 2px;
-  font-weight: 700;
-  z-index: 1;
-  color: #ffffff;
-  text-shadow:  0 0 4px #000;
-}
-.MidiasWrapper {
-  width: 100%;
-  overflow-x: auto;
-  text-align: center;
-}
-
-.MidiasSecundarias {
-  display: inline-flex;       
-  flex-wrap: nowrap;
-  gap: 10px;
-  min-height: 200px;
-  margin-top: 20px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.MidiasWrapper::-webkit-scrollbar {
-  height: 6px;
-}
-.MidiasWrapper::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-.boxMidia {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 auto;
-  width: 300px;
-  height: 190px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-  border-radius: 13px;
-}
-
-.boxMidia img{
-  width: 112%;
-}
-
-.boxMidia .PlayButton{
-  width: 35%;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.PlayButton{
-  position: absolute;
-  width: 30%;
-  z-index: 2;
-}
-.boxMidia:hover .thumbImg{
-  filter: brightness(0.4);
-}
-.boxMidia:hover .PlayButton {
-  opacity: 1;
-}
-.imageCegruDestaque2{
-  display: none;
-}
-@media (max-width: 1100px){
-  .imageCegruDestaque{
-    display: none;
-  }
-  .imageCegruDestaque2{
-  display: flex;
-}
 }

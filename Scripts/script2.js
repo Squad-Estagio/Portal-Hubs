@@ -219,3 +219,5 @@ cards4.forEach((element) => myObserver4.observe(element) )
   document.querySelectorAll('.counter').forEach(counter => {
     observer4.observe(counter);
   });
+
+  

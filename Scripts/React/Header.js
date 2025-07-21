@@ -110,7 +110,7 @@ const headerData = {
       ],
     },
     { label: "SOBRE", href: "sobre.html" },
-    { label: "CEGRU", href: "CEGRU.html" },
+    { label: "CEGRU", href: "CEGRU.html", className: "CegruNav" },
   ],
 };
 

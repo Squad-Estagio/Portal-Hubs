@@ -575,6 +575,147 @@
   padding-top: 1.3%;
 }
 
+
+/*+ MIDIAS*/
+
+.TextMidia{
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TextMidia h2{
+  position: absolute;
+  color: #ffffff23;
+  font-size: 2.8em;
+}
+.TextMidia span{
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-weight: 700;
+  z-index: 1;
+  color: #ffffff;
+  text-shadow:  0 0 4px #000;
+}
+.MidiasWrapper, .ImagensWrapper {
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.MidiasSecundarias, .ImagensSecundarias {
+  display: inline-flex;       
+  flex-wrap: nowrap;
+  gap: 10px;
+  min-height: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.MidiasWrapper::-webkit-scrollbar, .ImagensWrapper::-webkit-scrollbar{
+  height: 6px;
+}
+.MidiasWrapper::-webkit-scrollbar-thumb, .ImagensWrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.boxMidia, .boxImagem {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 300px;
+  height: 190px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 13px;
+}
+
+.boxMidia img, .boxImagem img{
+  width: 112%;
+}
+
+.boxMidia .PlayButton{
+  width: 35%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.PlayButton{
+  position: absolute;
+  width: 30%;
+  z-index: 2;
+}
+.boxMidia:hover .thumbImg, .boxImagem:hover{
+  filter: brightness(0.4);
+}
+.boxMidia:hover .PlayButton {
+  opacity: 1;
+}
+.imageCegruDestaque2{
+  display: none;
+}
+
+/*MODAL IMAGENS*/
+.ModalImagens {
+  position: fixed; /* Faz a modal fixar no lugar */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa toda a largura da tela */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  background-color: rgba(0, 0, 0, 0.885); /* Fundo escuro */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  padding: 20px;
+  z-index: 9999; /* Garante que a modal fique sobre outros elementos */
+  overflow: hidden; /* Impede rolagem na página enquanto a modal está aberta */
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #d7c30c; /* Mudando a cor do X quando o mouse passa por cima */
+}
+.ModalImagens img{
+  width: 50%;
+  height: auto;
+}
+.ModalTxt{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  color: #fff;
+}
+.ModalTxt h3{
+  letter-spacing: 2px;
+  font-size: 29px;
+  padding: 2px;
+  border-bottom: 2px solid #d7c30c;
+  margin-bottom: 20px;
+}
+.ModalTxt p{
+  color: #fff;
+  text-align: center;
+}
+.no-scroll {
+  overflow: hidden;
+}
 @media (max-width: 1100px) {
   .conteiner {
     flex-direction: column;
@@ -587,6 +728,12 @@
     width: 90%;
     max-width: 540px;
   }
+    .imageCegruDestaque{
+    display: none;
+  }
+  .imageCegruDestaque2{
+  display: flex;
+}
 }
 
 @media (min-width: 1921px) {
@@ -621,5 +768,11 @@
 
   .txtMain p {
     font-size: 1.1em;
+  }
+}
+
+@media (max-width: 630px){
+  .ModalImagens{
+    flex-direction: column;
   }
 }
