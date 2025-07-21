@@ -46,7 +46,7 @@ ul li .HubProjetosNav:hover {
 
 
 .gradient-text {
-  background: var(--BackGeralSobre);
+  background: linear-gradient(#dbb0e6, #d140d6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -66,9 +66,21 @@ ul li .HubProjetosNav:hover {
 .sectionMainCEGRU {
   background: var(--BackGeralSobre);
 }
+.Sobre_sc{
+   background: url(../CapaSobre.png);
+}
 
+.Sobre_sc p{
+  color: #fff;
+}
 
-
+.txtMainSobre h1{
+  color: #fce8fb;
+  text-shadow: 4px 4px #000000;
+}
+.txtMainSobre span{
+  text-shadow: none;
+}
 .txt h3 {
   color: #fff;
   text-shadow: 2px 2px #14331b;
@@ -116,7 +128,7 @@ ul li .HubProjetosNav:hover {
 }
 
 .btn {
-  background: var(--BackGeralSobre);
+  background: linear-gradient(to right, #6d377a, #d140d6);
 }
 .sobre-container h2, .sobre-container p {
   color: #fff;

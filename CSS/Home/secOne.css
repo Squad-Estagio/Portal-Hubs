@@ -33,11 +33,10 @@
     align-items: center;
     user-select: none;
   }
-  .item1{
-    background: url(../IMG/ENIAC.png);
-    background-size: 100%;
-    background-position: center center;
+  .carrossel-item img{
+    width: 100%;
   }
+
   .item2{
     background-color: rgb(121, 238, 121);
   }

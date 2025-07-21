@@ -29,13 +29,13 @@ ul li .HubProjetosNav:hover{
 
 .btn-outline {
   background: #ffffff28;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid #08a8d88a;
+  color: #f5f5f5;
 }
 
 .btn-outline:hover {
-  background: #1859a38a;
-  color: #000;
+  background: #08a8d88a;
+  color: #ffffff;
 }
 
 /*FINAL*/
@@ -48,7 +48,7 @@ ul li .HubProjetosNav:hover{
 }
 
 .CEGRU_sc {
-  background: url();
+  background: url(../CapaCegru.png);
   background-position: center center;
   background-size: cover;
 }
@@ -57,24 +57,30 @@ ul li .HubProjetosNav:hover{
   width: 20%;
   margin-bottom: 40px;
 }
-.LogoCEGRU{
-  width: 28% !important;
-  height: auto;
-  margin-bottom: 3%;
+.centerMainCegru img{
+  width: 27%;
+  margin-bottom: 28px;
+  
 }
+
 .CEGRU_sc h1{
   color: #000;
+  text-shadow: -2px 2px #cecece;
 }
 .CEGRU_sc p{
   color: #000;
 }
-
+.CEGRU_sc span{
+  text-shadow: none;
+}
 .sectionMainCEGRU{
   background: var(--BackGeralCEGRU);
 }
-
+.img_CEGRU{
+  background: linear-gradient(#ffffff00, #90c6c7);
+}
 .img_CEGRU::before {
-  border: 3px solid #1b89d3;
+  border: 3px solid #ffffff00;
 }
 .img_CEGRU::after {
   border: 1px dashed #ffffff00;
@@ -142,4 +148,97 @@ ul li .HubProjetosNav:hover{
 
 .contato p{
   color: #3a3a3a;
+}
+
+
+
+.TextMidia{
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TextMidia h2{
+  position: absolute;
+  color: #ffffff23;
+  font-size: 2.8em;
+}
+.TextMidia span{
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-weight: 700;
+  z-index: 1;
+  color: #ffffff;
+  text-shadow:  0 0 4px #000;
+}
+.MidiasWrapper {
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.MidiasSecundarias {
+  display: inline-flex;       
+  flex-wrap: nowrap;
+  gap: 10px;
+  min-height: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.MidiasWrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.MidiasWrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.boxMidia {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 300px;
+  height: 190px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  border-radius: 13px;
+}
+
+.boxMidia img{
+  width: 112%;
+}
+
+.boxMidia .PlayButton{
+  width: 35%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.PlayButton{
+  position: absolute;
+  width: 30%;
+  z-index: 2;
+}
+.boxMidia:hover .thumbImg{
+  filter: brightness(0.4);
+}
+.boxMidia:hover .PlayButton {
+  opacity: 1;
+}
+.imageCegruDestaque2{
+  display: none;
+}
+@media (max-width: 1100px){
+  .imageCegruDestaque{
+    display: none;
+  }
+  .imageCegruDestaque2{
+  display: flex;
+}
 }
