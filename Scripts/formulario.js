@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const phone = document.getElementById("phone");
         const origem = document.getElementById("pagina_origem");
 
-        origem.value = window.location.href;
-
+        origem.value = document.title;
 
         if (name.length < 2 || !/^[a-zA-Z\s]+$/.test(name)) {
             alert("Nome precisa ter pelo menos 2 caracteres e conter apenas letras.");
