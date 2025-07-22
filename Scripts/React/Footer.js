@@ -58,10 +58,10 @@ function Footer() {
             "ul",
             null,
             React.createElement("li", null, React.createElement("a", { href: "index.html" }, "Home")),
-            React.createElement("li", null, React.createElement("a", { href: "#projects" }, "Hub de Carreiras")),
+            React.createElement("li", null, React.createElement("a", { href: "HubCarreiras.html" }, "Hub de Carreiras")),
             React.createElement("li", null, React.createElement("a", { href: "HubSocial.html" }, "Hub Social")),
-            React.createElement("li", null, React.createElement("a", { href: "#contact" }, "Hub de Inovação")),
-            React.createElement("li", null, React.createElement("a", { href: "#" }, "Hub de Projetos"))
+            React.createElement("li", null, React.createElement("a", { href: "HubInovacao.html" }, "Hub de Inovação")),
+            React.createElement("li", null, React.createElement("a", { href: "HubProjetos.html" }, "Hub de Projetos"))
           )
         ),
 
