@@ -83,6 +83,7 @@
             <div class="contact-content">
                 <div class="contact-form">
                     <form id="contactForm">
+                      <input type="hidden" name="pagina_origem" id="pagina_origem">
                         <div class="form-group">
                             <label for="name">Nome Completo</label>
                             <input type="text" id="name" name="name" required>
@@ -130,8 +131,15 @@
     <script src="./Scripts/script2.js"></script>
     <script src="./Scripts/React/InfoContato.js"></script>
 
-    <script>
-    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+  <script>
+    (function () {
+      emailjs.init("s16Jo0he5MIvO6OUj");
+    })();
+  </script>
+  
+  <script src="Scripts/formulario.js"></script>
 
   </body>
 </html>
