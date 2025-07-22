@@ -1,271 +1,381 @@
 <!DOCTYPE html>
 <html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eniac - Portal Expositivo</title>
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index.css" />
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--REACT-->
     <script src="./Scripts/React/Header.js" defer></script>
     <script src="./Scripts/React/Footer.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header-root"></div>
     <div class="space-header"></div>
     <section id="hubCarreiras" class="sec-one">
-        <div class="carrossel-Geral">
-            <div class="carrossel-slides" id="slides">
-                <div class="carrossel-item item1"> <img src="./IMG/ENIAC.png" alt=""></div>
-                <div class="carrossel-item item2"></div>
-                <div class="carrossel-item"></div>
-            </div>
-
-            <div class="btn-left">
-                <p>❮</p>
-            </div>
-            <div class="btn-right">
-                <p>❯</p>
-            </div>
-
-            <div class="carrossel-indicadores">
-                <input type="radio" name="indicador" id="slide1" checked>
-                <input type="radio" name="indicador" id="slide2">
-                <input type="radio" name="indicador" id="slide3">
-            </div>
+      <div class="carrossel-Geral">
+        <div class="carrossel-slides" id="slides">
+          <div class="carrossel-item item1">
+            <img src="./IMG/ENIAC.png" alt="" />
+          </div>
+          <div class="carrossel-item item2">
+            <img src="./IMG/educaçãoCarrossel.jpg" alt="" />
+          </div>
+          <div class="carrossel-item">
+            <img src="./IMG/AQUI REALIZAMOS DOAÇÕES DE ROUPAS.png" alt="" />
+          </div>
         </div>
 
-        <div class="cards">
-            <a href="HubCarreiras.html">
-                <div class="card cardCarreiras"><img src="./IMG/Hub Carreiras Branca.png" alt="" class="lgCarreiras">
-                </div>
-            </a>
-            <a href="HubInovacao.html">
-                <div class="card cardInovacao"><img src="./IMG/Logo_HubInovacao.png" alt="" class="lgInovacao"></div>
-            </a>
-            <a href="HubSocial.html">
-                <div class="card cardSocial"><img src="./IMG/hub_Social.png" alt="" class="lgSocial"></div>
-            </a>
-            <a href="HubProjetos.html">
-                <div class="card cardProjetos"><img src="./IMG/LogoProjetos.png" alt="" class="lgProjetos"></div>
-            </a>
+        <div class="btn-left">
+          <p>❮</p>
         </div>
+        <div class="btn-right">
+          <p>❯</p>
+        </div>
+
+        <div class="carrossel-indicadores">
+          <input type="radio" name="indicador" id="slide1" checked />
+          <input type="radio" name="indicador" id="slide2" />
+          <input type="radio" name="indicador" id="slide3" />
+        </div>
+      </div>
+
+      <div class="cards">
+        <a href="HubCarreiras.html">
+          <div class="card cardCarreiras">
+            <img
+              src="./IMG/Hub Carreiras Branca.png"
+              alt=""
+              class="lgCarreiras"
+            />
+          </div>
+        </a>
+        <a href="HubInovacao.html">
+          <div class="card cardInovacao">
+            <img src="./IMG/Logo_HubInovacao.png" alt="" class="lgInovacao" />
+          </div>
+        </a>
+        <a href="HubSocial.html">
+          <div class="card cardSocial">
+            <img src="./IMG/hub_Social.png" alt="" class="lgSocial" />
+          </div>
+        </a>
+        <a href="HubProjetos.html">
+          <div class="card cardProjetos">
+            <img src="./IMG/LogoProjetos.png" alt="" class="lgProjetos" />
+          </div>
+        </a>
+      </div>
     </section>
 
     <section class="tickets">
-        <h2>DESTAQUES</h2>
-        <span>DESTAQUES</span>
-        <div class="ticketCarreiras hidden2">
-            <div class="TicketCarreirasResul">
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3500">0</p>
-                        <p>Vagas de emprego</p>
-                    </div>
-                </div>
-                <div class="divisionTickets"></div>
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3526">0</p>
-                        <p>Pessoas impactadas</p>
-                    </div>
-                </div>
-                <div class="divisionTickets"></div>
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="1890">0</p>
-                        <p>Alunos empregados</p>
-                    </div>
-                </div>
-                <div class="CircleTickets"></div>
+      <h2>DESTAQUES</h2>
+      <span>DESTAQUES</span>
+      <div class="ticketCarreiras hidden2">
+        <div class="TicketCarreirasResul">
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3500">0</p>
+              <p>Vagas de emprego</p>
             </div>
-            <div class="MainTicket MainTicketCarreiras">
-                <img src="./IMG/Hub Carreiras Branca.png" alt="" class="TicketImgCarreiras">
-                <p>Fazemos a conexão de talentos com as vagas disponíveis no mercado de trabalho, o maior público são os
-                    alunos e os Aluminis.</p>
-                    <div class="wrapper">
-                        <div class="link_wrapper">
-                          <a href="HubCarreiras.html">Saiba Mais</a>
-                          <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      
-                </div>
+          </div>
+          <div class="divisionTickets"></div>
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3526">0</p>
+              <p>Pessoas impactadas</p>
+            </div>
+          </div>
+          <div class="divisionTickets"></div>
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="1890">0</p>
+              <p>Alunos empregados</p>
+            </div>
+          </div>
+          <div class="CircleTickets"></div>
         </div>
-
-        <div class="ticketInovacao hidden">
-            <div class="TicketInovacaoResul">
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3500">0</p>
-                        <p>Vagas de emprego</p>
-                    </div>
-                </div>
-                <div class="divisionTickets divisionTicketsBlack"></div>
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3520">0</p>
-                        <p>Pessoas impactadas</p>
-                    </div>
-                </div>
-                <div class="divisionTickets divisionTicketsBlack"></div>
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="1890">0</p>
-                        <p>Alunos empregados</p>
-                    </div>
-                </div>
-                <div class="CircleTickets"></div>
+        <div class="MainTicket MainTicketCarreiras">
+          <img
+            src="./IMG/Hub Carreiras Branca.png"
+            alt=""
+            class="TicketImgCarreiras"
+          />
+          <p>
+            Fazemos a conexão de talentos com as vagas disponíveis no mercado de
+            trabalho, o maior público são os alunos e os Aluminis.
+          </p>
+          <div class="wrapper">
+            <div class="link_wrapper">
+              <a href="HubCarreiras.html">Saiba Mais</a>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 268.832 268.832"
+                >
+                  <path
+                    d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="MainTicket MainTicketInovacao">
-                <img src="./IMG/Logo_HubInovacao.png" alt="logo do hub de inovaçao" class="TicketImg">
-                <p>Conectamos as startups ao nosso ecossistema de grandes empresas parceiras, promovendo pilotos e
-                    co-desenvolvimento de produtos.</p>
-                    <div class="wrapper wrapperBlack">
-                        <div class="link_wrapper">
-                          <a href="HubInovacao.html">Saiba Mais</a>
-                          <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="ticketProjetos hidden2">
-            <div class="TicketProjetosResul">
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3500">0</p>
-                        <p>Vagas de emprego</p>
-                    </div>
-                </div>
-
-                <div class="divisionTickets"></div>
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3520">0</p>
-                        <p>Pessoas impactadas</p>
-                    </div>
-                </div>
-                <div class="divisionTickets"></div>
-
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="1890">0</p>
-                        <p>Alunos empregados</p>
-                    </div>
-                </div>
-                <div class="CircleTickets"></div>
+      <div class="ticketInovacao hidden">
+        <div class="TicketInovacaoResul">
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3500">0</p>
+              <p>Vagas de emprego</p>
             </div>
-            <div class="MainTicket MainTicketProjetos">
-                <img src="./IMG/LogoProjetos.png" alt="logo do hub de projetos" class="TicketImgProjetos">
-                <p>Conectamos os alunos a desafios reais das empresas, promovendo o desenvolvimento prático das
-                    habilidades dos
-                    estudantes.</p>
-                    <div class="wrapper">
-                        <div class="link_wrapper">
-                          <a href="HubProjetos.html">Saiba Mais</a>
-                          <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+          </div>
+          <div class="divisionTickets divisionTicketsBlack"></div>
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3520">0</p>
+              <p>Pessoas impactadas</p>
+            </div>
+          </div>
+          <div class="divisionTickets divisionTicketsBlack"></div>
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="1890">0</p>
+              <p>Alunos empregados</p>
+            </div>
+          </div>
+          <div class="CircleTickets"></div>
         </div>
-
-        <div class="ticketSocial hidden">
-
-            <div class="TicketSocialResul">
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3500">0</p>
-                        <p>Vagas de emprego</p>
-                    </div>
-                </div>
-
-                <div class="divisionTickets divisionTicketsBlack"></div>
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="3520">0</p>
-                        <p>Pessoas impactadas</p>
-                    </div>
-                </div>
-                <div class="divisionTickets divisionTicketsBlack"></div>
-
-                <div class="resulIcons">
-                    <img src="./IMG/pilha-de-tres-livros.png" alt="" class="iconTicket">
-                    <div>
-                        <p class="resulNumber counter" data-target="1890">0</p>
-                        <p>Alunos empregados</p>
-                    </div>
-                </div>
-                <div class="CircleTickets"></div>
+        <div class="MainTicket MainTicketInovacao">
+          <img
+            src="./IMG/Logo_HubInovacao.png"
+            alt="logo do hub de inovaçao"
+            class="TicketImg"
+          />
+          <p>
+            Conectamos as startups ao nosso ecossistema de grandes empresas
+            parceiras, promovendo pilotos e co-desenvolvimento de produtos.
+          </p>
+          <div class="wrapper wrapperBlack">
+            <div class="link_wrapper">
+              <a href="HubInovacao.html">Saiba Mais</a>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 268.832 268.832"
+                >
+                  <path
+                    d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="MainTicket MainTicketISocial">
-                <img src="./IMG/Logo_HubSocial.png" alt="logo do hub social" class="TicketImg">
-                <p>Oferecemos programas de extensão universitária e ações integradas de educação, saúde, assistência
-                    social e meio ambiente.</p>
-                    <div class="wrapper wrapperBlack">
-                        <div class="link_wrapper">
-                          <a href="HubSocial.html">Saiba Mais</a>
-                          <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="ticketProjetos hidden2">
+        <div class="TicketProjetosResul">
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3500">0</p>
+              <p>Vagas de emprego</p>
+            </div>
+          </div>
+
+          <div class="divisionTickets"></div>
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3520">0</p>
+              <p>Pessoas impactadas</p>
+            </div>
+          </div>
+          <div class="divisionTickets"></div>
+
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="1890">0</p>
+              <p>Alunos empregados</p>
+            </div>
+          </div>
+          <div class="CircleTickets"></div>
+        </div>
+        <div class="MainTicket MainTicketProjetos">
+          <img
+            src="./IMG/LogoProjetos.png"
+            alt="logo do hub de projetos"
+            class="TicketImgProjetos"
+          />
+          <p>
+            Conectamos os alunos a desafios reais das empresas, promovendo o
+            desenvolvimento prático das habilidades dos estudantes.
+          </p>
+          <div class="wrapper">
+            <div class="link_wrapper">
+              <a href="HubProjetos.html">Saiba Mais</a>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 268.832 268.832"
+                >
+                  <path
+                    d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticketSocial hidden">
+        <div class="TicketSocialResul">
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3500">0</p>
+              <p>Vagas de emprego</p>
+            </div>
+          </div>
+
+          <div class="divisionTickets divisionTicketsBlack"></div>
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="3520">0</p>
+              <p>Pessoas impactadas</p>
+            </div>
+          </div>
+          <div class="divisionTickets divisionTicketsBlack"></div>
+
+          <div class="resulIcons">
+            <img
+              src="./IMG/pilha-de-tres-livros.png"
+              alt=""
+              class="iconTicket"
+            />
+            <div>
+              <p class="resulNumber counter" data-target="1890">0</p>
+              <p>Alunos empregados</p>
+            </div>
+          </div>
+          <div class="CircleTickets"></div>
+        </div>
+        <div class="MainTicket MainTicketISocial">
+          <img
+            src="./IMG/Logo_HubSocial.png"
+            alt="logo do hub social"
+            class="TicketImg"
+          />
+          <p>
+            Oferecemos programas de extensão universitária e ações integradas de
+            educação, saúde, assistência social e meio ambiente.
+          </p>
+          <div class="wrapper wrapperBlack">
+            <div class="link_wrapper">
+              <a href="HubSocial.html">Saiba Mais</a>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 268.832 268.832"
+                >
+                  <path
+                    d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <div id="footer-root"></div>
 
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
     <script src="./Scripts/script.js"></script>
     <script src="./Scripts/script2.js"></script>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  
-  <script>
-    (function () {
-      emailjs.init("s16Jo0he5MIvO6OUj");
-    })();
-  </script>
-  
-  <script src="Scripts/formulario.js"></script>
-</body>
 
+    <script>
+      (function () {
+        emailjs.init("s16Jo0he5MIvO6OUj");
+      })();
+    </script>
+
+    <script src="Scripts/formulario.js"></script>
+  </body>
 </html>

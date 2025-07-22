@@ -43,22 +43,24 @@ function ClickImagem(imagem) {
 const imagensData = {
   imagens: [
     {
-      href: "https://www.exemplo.com/imagem1",
-      src: "https://i.ytimg.com/vi/xLyfexO4JIA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA1td3am4vV8RG5B9SF01FNWSV8Tg",
-      alt: "Hub Carreiras",
-      descricao: "Foi um dia de prova cheio de emoção e oportunidades para garantir uma das 150 bolsas de estudo nos cursos de pedagogia, enfermagem e psicologia."
+      src: "https://raw.githubusercontent.com/igordev-men/Eniac-comunidades/refs/heads/main/Eniac_nas_comunidades-1/projetoAcademy/assets/imgs/eniac-favala.jpg",
+      alt: "Título",
+      descricao: "Aqui será adicionado o texto explicando a ação social apresentada na imagem."
     },
     {
-      href: "https://www.exemplo.com/imagem2",
-      src: "https://i.ytimg.com/vi/cFnGz4lNUFI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDjng7i4tbdI8J3T0juF9C176GW5A",
-      alt: "Hub de Projetos",
-      descricao: "Descrição detalhada sobre Hub de Projetos."
+      src: "https://raw.githubusercontent.com/igordev-men/Eniac-comunidades/refs/heads/main/Eniac_nas_comunidades-1/projetoAcademy/assets/imgs/jornada.jpg",
+      alt: "Título 2",
+      descricao: "Aqui será adicionado o texto explicando a ação social apresentada na imagem."
     },
     {
-      href: "https://www.exemplo.com/imagem3",
-      src: "https://i.ytimg.com/vi/8uwvo7gekLM/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AHOBoAC4AOKAgwIABABGBogSih_MA8=&rs=AOn4CLCTvxGL73vvbVNlzg_vWc3Dge6GWg",
-      alt: "Hub de inovação",
-      descricao: "Descrição detalhada sobre o Hub de Inovação."
+      src: "https://raw.githubusercontent.com/igordev-men/Eniac-comunidades/refs/heads/main/Eniac_nas_comunidades-1/projetoAcademy/assets/imgs/gravida.jpg",
+      alt: "Título 3",
+      descricao: "Aqui será adicionado o texto explicando a ação social apresentada na imagem."
+    },
+    {
+      src: "https://raw.githubusercontent.com/igordev-men/Eniac-comunidades/refs/heads/main/Eniac_nas_comunidades-1/projetoAcademy/assets/imgs/educa%C3%A7ao-1.jpg",
+      alt: "Título 4",
+      descricao: "Aqui será adicionado o texto explicando a ação social apresentada na imagem."
     },
   ],
 };
