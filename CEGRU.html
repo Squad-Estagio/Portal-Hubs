@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/CEGRU/CEGRU.css" />
     <link rel="icon" href="./Assets/ICONS/Logo_HubInovacao.png" />
-
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      .swal2-popup {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -243,17 +248,17 @@
               <input type="hidden" name="pagina_origem" id="pagina_origem">
               <div class="form-group">
                 <label for="name">Nome Completo</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" maxlength="100" required />
               </div>
 
               <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required />
+                <input type="text" id="text" name="email" maxlength="350" required />
               </div>
 
               <div class="form-group">
                 <label for="phone">Telefone</label>
-                <input type="tel" id="phone" name="phone" />
+                <input id="phone" name="phone" maxlength="11" required />
               </div>
 
               <div class="form-group">
@@ -264,6 +269,7 @@
                   <option value="informacoes">Solicitar informações</option>
                   <option value="outros">Outros</option>
                 </select>
+                <input type="hidden" name="assuntoTexto" id="assuntoTexto">
               </div>
 
               <div class="form-group">
@@ -274,6 +280,7 @@
                   rows="5"
                   placeholder="Digite sua mensagem aqui..."
                   required
+                  maxlength="500"
                 ></textarea>
               </div>
 
