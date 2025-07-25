@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/HubProjetos/HubProjetos.css" />
     <link rel="icon" href="./Assets/ICONS/LogoProjetos.png" />
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
       .swal2-popup {
         font-family: 'Poppins', sans-serif;
@@ -252,6 +252,7 @@
             <div class="contact-content">
                 <div class="contact-form">
                     <form id="contactForm">
+                        <input type="hidden" name="pagina_origem" id="pagina_origem">
                         <div class="form-group">
                             <label for="name">Nome Completo</label>
                             <input type="text" id="name" maxlength="100" name="name" required>
