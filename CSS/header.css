@@ -59,11 +59,12 @@
       font-family: "Ubuntu", sans-serif;
       font-weight: 500;
       font-size: 15px;
+      padding: 2px 5px;
       text-decoration: none;
     }
 
     .division-Header {
-      width: 1.5px;
+      width: 1px;
       height: 30px;
       background-color: #d4d4d4;
     }

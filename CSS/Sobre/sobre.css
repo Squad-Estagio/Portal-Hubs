@@ -74,6 +74,9 @@ ul li .HubProjetosNav:hover {
   color: #fff;
 }
 
+.img_sobre{
+  background: linear-gradient(#ffffff00, #f9e7ff);
+}
 .txtMainSobre h1{
   color: #fce8fb;
   text-shadow: 4px 4px #000000;

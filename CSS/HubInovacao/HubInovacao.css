@@ -97,8 +97,11 @@ ul li .HubInovNav:hover {
     background-color: #fff;
 }
 
+.img_inovacao{
+  background: linear-gradient(#ffffff00, #ffffff);
+}
 .img_social::before {
-    border: 3px solid #c9bb00;
+    border: 3px solid #c9bc0000;
 }
 
 .img_social::after {

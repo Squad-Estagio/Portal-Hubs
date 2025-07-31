@@ -75,8 +75,13 @@ ul li .HubProjetosNav:hover {
   background: var(--BackGeralHubCarreiras);
 }
 
+.img_Carreiras{
+  background: linear-gradient(#ffffff00, #ececec);
+
+}
+
 .img_Carreiras::before {
-  border: 3px solid #1b89d3;
+  border: 3px solid #1b89d300;
 }
 
 .img_Carreiras::after {

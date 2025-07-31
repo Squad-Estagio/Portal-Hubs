@@ -37,7 +37,7 @@ function Midias({ videos }) {
 const midiasData = {
   videos: [
     {
-      href: "https://www.youtube.com/watch?v=L2vefuMJJKQ&t=4462s",
+      href: "https://www.youtube.com/watch?v=L2vefuMJJKQ",
       thumbnail: "https://img.youtube.com/vi/L2vefuMJJKQ/maxresdefault.jpg",
     },
     {

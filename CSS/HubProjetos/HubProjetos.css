@@ -84,8 +84,11 @@ ul li .HubProjetosNav:hover {
   background: var(--BackGeralHubProjetos);
 }
 
+.img_Projetos{
+  background: linear-gradient(#ffffff00, #ffffff);
+}
 .img_Projetos::before {
-  border: 3px solid #97d89b;
+  border: 3px solid #97d89b00;
 }
 
 .img_Projetos::after {

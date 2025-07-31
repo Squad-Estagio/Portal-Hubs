@@ -10,3 +10,6 @@ ul li .HubSocialNav:hover {
     background: #0a2efc;
     transform: scale(1.2);
 }
+.img_social{
+  background: linear-gradient(#ffffff00, #ffffff);
+}
